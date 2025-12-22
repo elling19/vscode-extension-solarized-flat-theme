@@ -1,0 +1,524 @@
+{
+	"name": "Solarized Light Flat",
+	"colors": {
+		// 标题栏
+		"titleBar.activeBackground": "#EEE8D5", // 标题栏（顶部）背景色
+		"titleBar.activeForeground": "#657B83", // 标题栏（顶部）前景色
+		"menu.selectionBackground": "#EEE8D5", // 下拉菜单选中背景色
+		"menu.background": "#FDF6E3", // 下拉菜单背景色
+		// 命令面板
+		"commandCenter.background": "#EEE8D5", // 标题栏中间面板
+		"commandCenter.foreground": "#657B83",
+		"commandCenter.activeBackground": "#FDF6E3",
+		"quickInput.background": "#EEE8D5",
+		"quickInput.foreground": "#657B83",
+		"quickInputTitle.background": "#EEE8D5",
+		// 活动栏
+		"activityBar.background": "#EEE8D5", // 活动栏(左侧图标)背景色
+		"activityBar.foreground": "#657B83", // 活动栏（左侧图标）前景色
+		// 侧边栏
+		"sideBar.background": "#EEE8D5", // 侧边栏背景色
+		"sideBar.foreground": "#657B83", // 侧边栏前景色
+		// 状态栏
+		"statusBar.background": "#EEE8D5", // 状态栏（顶部终端等）背景色
+		"statusBar.foreground": "#657B83", // 状态栏前景色
+		// 标签页
+		"tab.activeBackground": "#FDF6E3", // 活动标签页背景色
+		"tab.activeForeground": "#657B83", // 活动标签页前景色
+		"tab.inactiveBackground": "#EEE8D5", // 非活动标签页背景色
+		"tab.inactiveForeground": "#93A1A1", // 非活动标签页
+		"tab.border": "#EEE8D5", // 标签页边框色
+		"editorGroupHeader.tabsBackground": "#EEE8D5", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
+		"editorGroupHeader.border": "#EEE8D5", // 标签栏右侧按钮边框色
+		// 列表项
+		"list.activeSelectionBackground": "#FDF6E3",
+		"list.activeSelectionForeground": "#657B83",
+		"list.inactiveSelectionBackground": "#FDF6E3",
+		"list.inactiveSelectionForeground": "#657B83",
+		"list.hoverBackground": "#FDF6E3", // 鼠标悬停列表项背景色
+		"list.hoverForeground": "#657B83",
+		"list.focusOutline": "#b58900",
+		// 编辑器
+		"editor.background": "#FDF6E3", // 编辑器背景色
+		"editor.foreground": "#657B83", // 编辑器前景色
+		"editorLineNumber.foreground": "#93A1A1",
+		"editorLineNumber.activeForeground": "#657B83",
+		"editor.selectionBackground": "#b5880033", // 选中文本背景色
+		"editorCursor.foreground": "#dc322f", // 光标颜色
+		"editorCursor.background": "#FDF6E3", // 光标背景色
+		// 编辑器括号高亮
+		"editorBracketHighlight.foreground1": "#2AA198",
+        "editorBracketHighlight.foreground2": "#268BD2",
+        "editorBracketHighlight.foreground3": "#6C71C4",
+        "editorBracketHighlight.foreground4": "#D33682",
+        "editorBracketHighlight.foreground5": "#DC322F",
+        "editorBracketHighlight.foreground6": "#CB4B16",
+		// 编辑器滚动条
+		"scrollbar.background": "#fdf6e3", // 与背景一致
+		"scrollbar.shadow": "#fdf6e3", // 与背景一致
+		"scrollbarSlider.background": "#EEE8D5",
+		"scrollbarSlider.hoverBackground": "#EEE8D5",
+		"scrollbarSlider.activeBackground": "#EEE8D5",
+		// "editorStickyScroll.background": "#FF00FF",  // 粘性滚动背景色
+		// 编辑器当前行
+		"editor.lineHighlightBackground": "#EEE8D5",
+		"editor.lineHighlightBorder": "#EEE8D5",
+		// 编辑器高亮色
+		"editor.wordHighlightBackground": "#b5880028", // 黄色半透明
+		"editor.wordHighlightStrongBackground": "#cb4c161c", // 橙色半透明
+		// 编辑器提示窗口
+		"editorSuggestWidget.selectedBackground": "#EEE8D5",
+		"editorSuggestWidget.background": "#EEE8D5",
+		"editorHoverWidget.background": "#EEE8D5",
+		"editorHoverWidget.border": "#EEE8D5",
+		// 面板
+		"panel.border": "#EEE8D5", // 让底部面板区分编辑器的颜色
+		"panel.background": "#FDF6E3",
+		"panelTitle.activeForeground": "#657B83",
+		"panelTitle.inactiveForeground": "#93A1A1",
+		// 按钮颜色
+		"button.background": "#B58900",
+		"button.foreground": "#FDF6E3",
+		"button.hoverBackground": "#b58800d2",
+		// 输入框
+		"input.background": "#fdf6e3",
+		"input.foreground": "#586e75",
+		"input.border": "#93a1a1",
+		"input.placeholderForeground": "#93a1a1",
+		"inputOption.activeBackground": "#eee8d5",
+		"inputOption.activeForeground": "#b58900",
+		"inputOption.activeBorder": "#b58900",
+		// 终端
+		"terminal.foreground": "#839496",
+		"terminalCursor.foreground": "#DC322F",
+	},
+	"tokenColors": [
+		{
+			"name": "Parentheses",
+			"scope": [
+				"punctuation.parenthesis",
+				"meta.brace.round",
+				"punctuation.section.group",
+				"punctuation.definition.parameters"
+			],
+			"settings": {
+				"foreground": "#586e75"
+			}
+		},
+		{
+			"name": "Comments",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#AAAAAA"
+			}
+		},
+		{
+			"name": "Comments: Preprocessor",
+			"scope": "comment.block.preprocessor",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#AAAAAA"
+			}
+		},
+		{
+			"name": "Comments: Documentation",
+			"scope": [
+				"comment.documentation",
+				"comment.block.documentation"
+			],
+			"settings": {
+				"foreground": "#448C27"
+			}
+		},
+		{
+			"name": "Invalid - Illegal",
+			"scope": "invalid.illegal",
+			"settings": {
+				"foreground": "#DC322F"
+			}
+		},
+		{
+			"name": "Operators",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#2AA198"
+			}
+		},
+		{
+			"name": "Keywords", // 关键字
+			"scope": [
+				"keyword",
+				"storage"
+			],
+			"settings": {
+				"foreground": "#2AA198"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"storage.type",
+				"support.type"
+			],
+			"settings": {
+				"foreground": "#6C71C4"
+			}
+		},
+		{
+			"name": "Language Constants",
+			"scope": [
+				"constant.language",
+				"support.constant",
+				"variable.language"
+			],
+			"settings": {
+				"foreground": "#AB6526"
+			}
+		},
+		{
+			"name": "Variables", // 变量
+			"scope": [
+				"variable",
+				"support.variable"
+			],
+			"settings": {
+				"foreground": "#B58900"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"entity.name.function",
+				"support.function"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#859900"
+			}
+		},
+		{
+			"name": "Classes", // 类
+			"scope": [
+				"entity.name.type",
+				"entity.other.inherited-class",
+				"support.class"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#268BD2"
+			}
+		},
+		{
+			"name": "Exceptions",
+			"scope": "entity.name.exception",
+			"settings": {
+				"foreground": "#DC322F"
+			}
+		},
+		{
+			"name": "Sections",
+			"scope": "entity.name.section",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Numbers, Characters", // 数字，字符常量
+			"scope": [
+				"constant.numeric",
+				"constant.character",
+				"constant"
+			],
+			"settings": {
+				"foreground": "#657B83"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": "string", // 字符串常量
+			"settings": {
+				"foreground": "#657B83"
+			}
+		},
+		{
+			"name": "Strings: Escape Sequences",
+			"scope": "constant.character.escape",
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+		{
+			"name": "Strings: Regular Expressions",
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#4B83CD"
+			}
+		},
+		{
+			"name": "Strings: Symbols",
+			"scope": "constant.other.symbol",
+			"settings": {
+				"foreground": "#AB6526"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation",
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+		{
+			"name": "HTML: Doctype Declaration",
+			"scope": [
+				"meta.tag.sgml.doctype",
+				"meta.tag.sgml.doctype string",
+				"meta.tag.sgml.doctype entity.name.tag",
+				"meta.tag.sgml punctuation.definition.tag.html"
+			],
+			"settings": {
+				"foreground": "#AAAAAA"
+			}
+		},
+		{
+			"name": "HTML: Tags",
+			"scope": [
+				"meta.tag",
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html"
+			],
+			"settings": {
+				"foreground": "#91B3E0"
+			}
+		},
+		{
+			"name": "HTML: Tag Names",
+			"scope": "entity.name.tag",
+			"settings": {
+				"foreground": "#4B83CD"
+			}
+		},
+		{
+			"name": "HTML: Attribute Names",
+			"scope": [
+				"meta.tag entity.other.attribute-name",
+				"entity.other.attribute-name.html"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#91B3E0"
+			}
+		},
+		{
+			"name": "HTML: Entities",
+			"scope": [
+				"constant.character.entity",
+				"punctuation.definition.entity"
+			],
+			"settings": {
+				"foreground": "#AB6526"
+			}
+		},
+		{
+			"name": "CSS: Selectors",
+			"scope": [
+				"meta.selector",
+				"meta.selector entity",
+				"meta.selector entity punctuation",
+				"entity.name.tag.css"
+			],
+			"settings": {
+				"foreground": "#6C71C4"
+			}
+		},
+		{
+			"name": "CSS: Property Names",
+			"scope": [
+				"meta.property-name",
+				"support.type.property-name"
+			],
+			"settings": {
+				"foreground": "#AB6526"
+			}
+		},
+		{
+			"name": "CSS: Property Values",
+			"scope": [
+				"meta.property-value",
+				"meta.property-value constant.other",
+				"support.constant.property-value"
+			],
+			"settings": {
+				"foreground": "#448C27"
+			}
+		},
+		{
+			"name": "CSS: Important Keyword",
+			"scope": "keyword.other.important",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup: Changed",
+			"scope": "markup.changed",
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Markup: Deletion",
+			"scope": "markup.deleted",
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Markup: Emphasis",
+			"scope": "markup.italic",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markup: Error",
+			"scope": "markup.error",
+			"settings": {
+				"foreground": "#DC322F"
+			}
+		},
+		{
+			"name": "Markup: Insertion",
+			"scope": "markup.inserted",
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Markup: Link",
+			"scope": "meta.link",
+			"settings": {
+				"foreground": "#4B83CD"
+			}
+		},
+		{
+			"name": "Markup: Output",
+			"scope": [
+				"markup.output",
+				"markup.raw"
+			],
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+		{
+			"name": "Markup: Prompt",
+			"scope": "markup.prompt",
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+		{
+			"name": "Markup: Heading",
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#CB4616"
+			}
+		},
+		{
+			"name": "Markup: Strong",
+			"scope": "markup.bold",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup: Traceback",
+			"scope": "markup.traceback",
+			"settings": {
+				"foreground": "#DC322F"
+			}
+		},
+		{
+			"name": "Markup: Underline",
+			"scope": "markup.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Markup Quote",
+			"scope": "markup.quote",
+			"settings": {
+				"foreground": "#6C71C4"
+			}
+		},
+		{
+			"name": "Markup Lists",
+			"scope": "markup.list",
+			"settings": {
+				"foreground": "#4B83CD"
+			}
+		},
+		{
+			"name": "Markup Styling",
+			"scope": [
+				"markup.bold",
+				"markup.italic"
+			],
+			"settings": {
+				"foreground": "#448C27"
+			}
+		},
+		{
+			"name": "Markup Inline",
+			"scope": "markup.inline.raw",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#AB6526"
+			}
+		},
+		{
+			"name": "Extra: Diff Range",
+			"scope": [
+				"meta.diff.range",
+				"meta.diff.index",
+				"meta.separator"
+			],
+			"settings": {
+				"foreground": "#434343"
+			}
+		},
+		{
+			"name": "Extra: Diff From",
+			"scope": "meta.diff.header.from-file",
+			"settings": {
+				"foreground": "#434343"
+			}
+		},
+		{
+			"name": "Extra: Diff To",
+			"scope": "meta.diff.header.to-file",
+			"settings": {
+				"foreground": "#434343"
+			}
+		},
+		{
+			"name": "Python Docstring", // Python文档注释
+			"scope": [
+				"string.quoted.docstring.multi.python",
+				"comment.documentation",
+				"comment.block.documentation"
+			],
+			"settings": {
+				"foreground": "#93a1a1",
+				"fontStyle": "italic"
+			}
+		}
+	]
+}
