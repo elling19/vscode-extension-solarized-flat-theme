@@ -46,13 +46,14 @@
 		"editor.selectionBackground": "#b5880033", // 选中文本背景色
 		"editorCursor.foreground": "#dc322f", // 光标颜色
 		"editorCursor.background": "#FDF6E3", // 光标背景色
+		"editorLink.activeForeground": "#268BD2", // 编辑器中链接颜色
 		// 编辑器括号高亮
 		"editorBracketHighlight.foreground1": "#2AA198",
-        "editorBracketHighlight.foreground2": "#268BD2",
-        "editorBracketHighlight.foreground3": "#6C71C4",
-        "editorBracketHighlight.foreground4": "#D33682",
-        "editorBracketHighlight.foreground5": "#DC322F",
-        "editorBracketHighlight.foreground6": "#CB4B16",
+		"editorBracketHighlight.foreground2": "#268BD2",
+		"editorBracketHighlight.foreground3": "#6C71C4",
+		"editorBracketHighlight.foreground4": "#D33682",
+		"editorBracketHighlight.foreground5": "#DC322F",
+		"editorBracketHighlight.foreground6": "#CB4B16",
 		// 编辑器滚动条
 		"scrollbar.background": "#fdf6e3", // 与背景一致
 		"scrollbar.shadow": "#fdf6e3", // 与背景一致
@@ -67,13 +68,16 @@
 		"editor.wordHighlightBackground": "#b5880028", // 黄色半透明
 		"editor.wordHighlightStrongBackground": "#cb4c161c", // 橙色半透明
 		// 编辑器提示窗口
-		"editorSuggestWidget.selectedBackground": "#EEE8D5",
-		"editorSuggestWidget.background": "#EEE8D5",
 		"editorHoverWidget.background": "#EEE8D5",
 		"editorHoverWidget.border": "#EEE8D5",
+		// 编辑器自动补全窗口
+		"editorSuggestWidget.selectedBackground": "#EEE8D5",
+		"editorSuggestWidget.background": "#FDF6E3",
+		"editorSuggestWidget.border": "#EEE8D5",
 		// 面板
 		"panel.border": "#EEE8D5", // 让底部面板区分编辑器的颜色
 		"panel.background": "#FDF6E3",
+		"panelTitle.activeBorder": "#FDF6E3",
 		"panelTitle.activeForeground": "#657B83",
 		"panelTitle.inactiveForeground": "#93A1A1",
 		// 按钮颜色
@@ -89,8 +93,20 @@
 		"inputOption.activeForeground": "#b58900",
 		"inputOption.activeBorder": "#b58900",
 		// 终端
-		"terminal.foreground": "#839496",
+		"terminal.foreground": "#657B83",
+		"terminal.background": "#FDF6E3",
 		"terminalCursor.foreground": "#DC322F",
+		"focusBorder": "#B58900", // 点击面板等其他区域时的边框颜色
+		// 通知栏
+		"notifications.background": "#EEE8D5",
+		"notifications.foreground": "#657B83",
+		// 引用预览窗口
+		"peekViewTitle.background": "#EEE8D5",
+		"peekViewEditor.background": "#FDF6E3",
+		"peekView.border": "#268BD2",
+		"peekViewTitleLabel.foreground": "#657B83",
+		"peekViewResult.background": "#FDF6E3",
+		"peekViewResult.fileForeground": "#657B83",
 	},
 	"tokenColors": [
 		{
@@ -112,7 +128,6 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#AAAAAA"
 			}
 		},
@@ -165,7 +180,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#6C71C4"
+				"foreground": "#2AA198"
 			}
 		},
 		{
@@ -186,18 +201,25 @@
 				"support.variable"
 			],
 			"settings": {
-				"foreground": "#B58900"
+				"foreground": "#6C71C4"
 			}
 		},
 		{
 			"name": "Functions",
 			"scope": [
-				"entity.name.function",
-				"support.function"
+				"entity.name.function", // 函数声明
 			],
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#859900"
+				"foreground": "#268BD2"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"support.function" // 函数调用
+			],
+			"settings": {
+				"foreground": "#268BD2"
 			}
 		},
 		{
@@ -517,7 +539,16 @@
 			],
 			"settings": {
 				"foreground": "#93a1a1",
-				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Python Function Parameter",  // Python函数参数
+			"scope": [
+				"variable.parameter",
+				"meta.function.parameters.python"
+			],
+			"settings": {
+				"foreground": "#6C71C4"
 			}
 		}
 	]

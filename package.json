@@ -2,6 +2,9 @@
   "name": "solarized-light-flat",
   "displayName": "Solarized Light Flat",
   "description": "",
+  "repository": {
+    "url": "https://github.com/elling19/vscode-extension-solarized-light-flat-theme"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.107.0"
