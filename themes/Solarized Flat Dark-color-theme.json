@@ -75,7 +75,9 @@
         "scrollbarSlider.background": "#073642",
         "scrollbarSlider.hoverBackground": "#073642",
         "scrollbarSlider.activeBackground": "#073642",
-        // "editorStickyScroll.background": "#FF00FF",  // 粘性滚动背景色
+        // 粘性滚动
+		"editorStickyScrollHover.background": "#002B36",
+		"editorStickyScroll.border": "#073642",
         // 编辑器当前行
         "editor.lineHighlightBackground": "#073642",
         "editor.lineHighlightBorder": "#073642",

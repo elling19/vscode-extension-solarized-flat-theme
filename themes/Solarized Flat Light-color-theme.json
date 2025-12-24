@@ -27,8 +27,8 @@
 		// 状态栏
 		"statusBar.background": "#FDF6E3", // 状态栏（顶部终端等）背景色
 		"statusBar.foreground": "#657B83", // 状态栏前景色
-		"statusBar.debuggingBackground": "#586E75", // 调试时状态栏背景色
-		"statusBar.debuggingForeground": "#EEE8D5", // 调试时状态栏前景色
+		"statusBar.debuggingBackground": "#FDF6E3", // 调试时状态栏背景色
+		"statusBar.debuggingForeground": "#657B83", // 调试时状态栏前景色
 		"statusBarItem.hoverBackground": "#268BD2", // 状态栏鼠标悬停背景色
 		"statusBarItem.hoverForeground": "#EEE8D5", // 状态栏鼠标悬停前景色
 		// 标签页
@@ -75,7 +75,9 @@
 		"scrollbarSlider.background": "#EEE8D5",
 		"scrollbarSlider.hoverBackground": "#EEE8D5",
 		"scrollbarSlider.activeBackground": "#EEE8D5",
-		// "editorStickyScroll.background": "#FF00FF",  // 粘性滚动背景色
+		// 粘性滚动
+		"editorStickyScrollHover.background": "#FDF6E3",
+		"editorStickyScroll.border": "#EEE8D5",
 		// 编辑器当前行
 		"editor.lineHighlightBackground": "#EEE8D5",
 		"editor.lineHighlightBorder": "#EEE8D5",
