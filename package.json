@@ -1,6 +1,6 @@
 {
-  "name": "solarized-light-flat",
-  "displayName": "Solarized Light Flat",
+  "name": "solarized-flat-theme",
+  "displayName": "Solarized Flat Theme",
   "description": "",
   "repository": {
     "url": "https://github.com/elling19/vscode-extension-solarized-light-flat-theme"
@@ -15,9 +15,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Solarized Light Flat",
+        "label": "Solarized Flat Light",
         "uiTheme": "vs",
-        "path": "./themes/Solarized Light Flat-color-theme.json"
+        "path": "./themes/Solarized Flat Light-color-theme.json"
+      },
+      {
+        "label": "Solarized Flat Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Solarized Flat Dark-color-theme.json"
       }
     ]
   }

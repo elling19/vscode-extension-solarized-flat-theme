@@ -1,5 +1,6 @@
 {
 	"name": "Solarized Light Flat",
+	"type": "light",
 	"colors": {
 		// 标题栏
 		"titleBar.activeBackground": "#FDF6E3", // 标题栏（顶部）背景色
@@ -25,9 +26,13 @@
 		// 状态栏
 		"statusBar.background": "#FDF6E3", // 状态栏（顶部终端等）背景色
 		"statusBar.foreground": "#657B83", // 状态栏前景色
+		"statusBar.debuggingBackground": "#586E75", // 调试时状态栏背景色
+		"statusBar.debuggingForeground": "#EEE8D5", // 调试时状态栏前景色
+		"statusBarItem.hoverBackground": "#268BD2", // 状态栏鼠标悬停背景色
+		"statusBarItem.hoverForeground": "#EEE8D5", // 状态栏鼠标悬停前景色
 		// 标签页
 		"tab.activeBackground": "#FDF6E3", // 活动标签页背景色
-		"tab.activeForeground": "#268BD2", // 活动标签页前景色
+		"tab.activeForeground": "#586E75", // 活动标签页前景色
 		"tab.inactiveBackground": "#FDF6E3", // 非活动标签页背景色
 		"tab.inactiveForeground": "#93A1A1", // 非活动标签页
 		"tab.border": "#FDF6E3", // 标签页边框色
@@ -41,6 +46,12 @@
 		"list.hoverBackground": "#EEE8D5", // 鼠标悬停列表项背景色
 		"list.hoverForeground": "#657B83",
 		"list.focusOutline": "#EEE8D5", // 列表项聚焦边框色
+		// 面包屑导航
+        "breadcrumb.foreground": "#93A1A1",
+        "breadcrumb.background": "#FDF6E3",
+        "breadcrumb.focusForeground": "#657B83",
+        "breadcrumb.activeSelectionForeground": "#268bd2",
+        "breadcrumbPicker.background": "#FDF6E3",
 		// 编辑器
 		"editor.background": "#FDF6E3", // 编辑器背景色
 		"editor.foreground": "#657B83", // 编辑器前景色
@@ -68,8 +79,8 @@
 		"editor.lineHighlightBackground": "#EEE8D5",
 		"editor.lineHighlightBorder": "#EEE8D5",
 		// 编辑器高亮色
-		"editor.wordHighlightBackground": "#b5880028", // 黄色半透明
-		"editor.wordHighlightStrongBackground": "#cb4c161c", // 橙色半透明
+		"editor.wordHighlightBackground": "#268BD233",
+		"editor.wordHighlightStrongBackground": "#268BD233",
 		// 编辑器提示窗口
 		"editorHoverWidget.background": "#EEE8D5",
 		"editorHoverWidget.border": "#EEE8D5",
@@ -77,6 +88,10 @@
 		"editorSuggestWidget.selectedBackground": "#EEE8D5",
 		"editorSuggestWidget.background": "#FDF6E3",
 		"editorSuggestWidget.border": "#EEE8D5",
+		// 编辑器内搜索
+		"editorWidget.background": "#FDF6E3",
+		"editorWidget.border": "#EEE8D5",
+		"editorWidget.foreground": "#657B83",
 		// 面板
 		"panel.border": "#EEE8D5", // 让底部面板区分编辑器的颜色
 		"panel.background": "#FDF6E3",
@@ -86,6 +101,22 @@
 		// 终端
 		"terminal.foreground": "#657B83",
 		"terminal.background": "#FDF6E3",
+		"terminal.ansiBlack": "#073642",
+        "terminal.ansiRed": "#dc322f",
+        "terminal.ansiGreen": "#859900",
+        "terminal.ansiYellow": "#b58900",
+        "terminal.ansiBlue": "#268bd2",
+        "terminal.ansiMagenta": "#d33682",
+        "terminal.ansiCyan": "#2aa198",
+        "terminal.ansiWhite": "#eee8d5",
+        "terminal.ansiBrightBlack": "#586e75",
+        "terminal.ansiBrightRed": "#cb4b16",
+        "terminal.ansiBrightGreen": "#93a1a1",
+        "terminal.ansiBrightYellow": "#657b83",
+        "terminal.ansiBrightBlue": "#839496",
+        "terminal.ansiBrightMagenta": "#6c71c4",
+        "terminal.ansiBrightCyan": "#93a1a1",
+        "terminal.ansiBrightWhite": "#fdf6e3",
 		"terminalCursor.foreground": "#DC322F",
 		"focusBorder": "#93A1A1", // 点击面板等其他区域时的边框颜色
 		// 通知栏
@@ -98,6 +129,8 @@
 		"peekViewTitleLabel.foreground": "#657B83",
 		"peekViewResult.background": "#FDF6E3",
 		"peekViewResult.fileForeground": "#657B83",
+		// F5 debug框体
+		"debugToolBar.background": "#FDF6E3",
 		// 按钮颜色
 		"button.background": "#268BD2",
 		"button.foreground": "#FDF6E3",
@@ -190,7 +223,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#2AA198"
+				"foreground": "#D33682"
 			}
 		},
 		{
@@ -263,10 +296,16 @@
 			"scope": [
 				"constant.numeric",
 				"constant.character",
-				"constant"
 			],
 			"settings": {
-				"foreground": "#657B83"
+				"foreground": "#6C71C4"
+			}
+		},
+		{
+			"name": "constant",
+			"scope": "constant.other",
+			"settings": {
+				"foreground": "#6C71C4"  // 其他常量
 			}
 		},
 		{
@@ -375,7 +414,7 @@
 				"support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "#2AA198"
 			}
 		},
 		{
@@ -541,11 +580,27 @@
 			}
 		},
 		{
+            "name": "String Quotes",
+            "scope": [
+				"string.quoted.single.python punctuation.definition.string.begin.python",
+    			"string.quoted.single.python punctuation.definition.string.end.python",
+    			"string.quoted.double.python punctuation.definition.string.begin.python",
+    			"string.quoted.double.python punctuation.definition.string.end.python",
+    			"string.quoted.multi.python punctuation.definition.string.begin.python",
+    			"string.quoted.multi.python punctuation.definition.string.end.python"
+            ],
+            "settings": {
+                "foreground": "#2AA198" // 引号颜色
+            }
+        },
+		{
 			"name": "Python Docstring", // Python文档注释
 			"scope": [
 				"string.quoted.docstring.multi.python",
 				"comment.documentation",
-				"comment.block.documentation"
+				"comment.block.documentation",
+				"comment.block.documentation.python punctuation.definition.string.begin.python",
+    			"comment.block.documentation.python punctuation.definition.string.end.python"
 			],
 			"settings": {
 				"foreground": "#93a1a1",
@@ -560,6 +615,15 @@
 			"settings": {
 				"foreground": "#6C71C4"
 			}
+		},
+		{
+			"name": "Other languages quote color",
+			"scope": [
+    			"string.quoted"
+			],
+			"settings": {
+                "foreground": "#2AA198" // 其他语言引号颜色
+            }
 		}
 	]
 }
