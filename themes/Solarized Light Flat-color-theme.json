@@ -2,48 +2,51 @@
 	"name": "Solarized Light Flat",
 	"colors": {
 		// 标题栏
-		"titleBar.activeBackground": "#EEE8D5", // 标题栏（顶部）背景色
+		"titleBar.activeBackground": "#FDF6E3", // 标题栏（顶部）背景色
 		"titleBar.activeForeground": "#657B83", // 标题栏（顶部）前景色
 		"menu.selectionBackground": "#EEE8D5", // 下拉菜单选中背景色
 		"menu.background": "#FDF6E3", // 下拉菜单背景色
 		// 命令面板
-		"commandCenter.background": "#EEE8D5", // 标题栏中间面板
+		"commandCenter.background": "#FDF6E3", // 标题栏中间面板
 		"commandCenter.foreground": "#657B83",
 		"commandCenter.activeBackground": "#FDF6E3",
-		"quickInput.background": "#EEE8D5",
+		"quickInput.background": "#FDF6E3",
 		"quickInput.foreground": "#657B83",
 		"quickInputTitle.background": "#EEE8D5",
 		// 活动栏
-		"activityBar.background": "#EEE8D5", // 活动栏(左侧图标)背景色
+		"activityBar.background": "#FDF6E3", // 活动栏(左侧图标)背景色
 		"activityBar.foreground": "#657B83", // 活动栏（左侧图标）前景色
 		// 侧边栏
-		"sideBar.background": "#EEE8D5", // 侧边栏背景色
+		"sideBar.background": "#FDF6E3", // 侧边栏背景色
 		"sideBar.foreground": "#657B83", // 侧边栏前景色
+		"sideBarSectionHeader.background": "#EEE8D5", // 侧边栏标题背景色
+		"sideBarSectionHeader.foreground": "#657B83", // 侧边栏标题前景色
+		"sideBarTitle.foreground": "#657B83", // 侧边栏标题前景色
 		// 状态栏
-		"statusBar.background": "#EEE8D5", // 状态栏（顶部终端等）背景色
+		"statusBar.background": "#FDF6E3", // 状态栏（顶部终端等）背景色
 		"statusBar.foreground": "#657B83", // 状态栏前景色
 		// 标签页
 		"tab.activeBackground": "#FDF6E3", // 活动标签页背景色
-		"tab.activeForeground": "#657B83", // 活动标签页前景色
-		"tab.inactiveBackground": "#EEE8D5", // 非活动标签页背景色
+		"tab.activeForeground": "#268BD2", // 活动标签页前景色
+		"tab.inactiveBackground": "#FDF6E3", // 非活动标签页背景色
 		"tab.inactiveForeground": "#93A1A1", // 非活动标签页
-		"tab.border": "#EEE8D5", // 标签页边框色
-		"editorGroupHeader.tabsBackground": "#EEE8D5", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
+		"tab.border": "#FDF6E3", // 标签页边框色
+		"editorGroupHeader.tabsBackground": "#FDF6E3", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
 		"editorGroupHeader.border": "#EEE8D5", // 标签栏右侧按钮边框色
 		// 列表项
-		"list.activeSelectionBackground": "#FDF6E3",
+		"list.activeSelectionBackground": "#EEE8D5", // 选中列表项背景色
 		"list.activeSelectionForeground": "#657B83",
-		"list.inactiveSelectionBackground": "#FDF6E3",
+		"list.inactiveSelectionBackground": "#EEE8D5",
 		"list.inactiveSelectionForeground": "#657B83",
-		"list.hoverBackground": "#FDF6E3", // 鼠标悬停列表项背景色
+		"list.hoverBackground": "#EEE8D5", // 鼠标悬停列表项背景色
 		"list.hoverForeground": "#657B83",
-		"list.focusOutline": "#b58900",
+		"list.focusOutline": "#EEE8D5", // 列表项聚焦边框色
 		// 编辑器
 		"editor.background": "#FDF6E3", // 编辑器背景色
 		"editor.foreground": "#657B83", // 编辑器前景色
 		"editorLineNumber.foreground": "#93A1A1",
 		"editorLineNumber.activeForeground": "#657B83",
-		"editor.selectionBackground": "#b5880033", // 选中文本背景色
+		"editor.selectionBackground": "#268ad23a", // 选中文本背景色
 		"editorCursor.foreground": "#dc322f", // 光标颜色
 		"editorCursor.background": "#FDF6E3", // 光标背景色
 		"editorLink.activeForeground": "#268BD2", // 编辑器中链接颜色
@@ -80,33 +83,40 @@
 		"panelTitle.activeBorder": "#FDF6E3",
 		"panelTitle.activeForeground": "#657B83",
 		"panelTitle.inactiveForeground": "#93A1A1",
-		// 按钮颜色
-		"button.background": "#B58900",
-		"button.foreground": "#FDF6E3",
-		"button.hoverBackground": "#b58800d2",
-		// 输入框
-		"input.background": "#fdf6e3",
-		"input.foreground": "#586e75",
-		"input.border": "#93a1a1",
-		"input.placeholderForeground": "#93a1a1",
-		"inputOption.activeBackground": "#eee8d5",
-		"inputOption.activeForeground": "#b58900",
-		"inputOption.activeBorder": "#b58900",
 		// 终端
 		"terminal.foreground": "#657B83",
 		"terminal.background": "#FDF6E3",
 		"terminalCursor.foreground": "#DC322F",
-		"focusBorder": "#B58900", // 点击面板等其他区域时的边框颜色
+		"focusBorder": "#93A1A1", // 点击面板等其他区域时的边框颜色
 		// 通知栏
-		"notifications.background": "#EEE8D5",
+		"notifications.background": "#FDF6E3",
 		"notifications.foreground": "#657B83",
 		// 引用预览窗口
-		"peekViewTitle.background": "#EEE8D5",
+		"peekViewTitle.background": "#FDF6E3",
 		"peekViewEditor.background": "#FDF6E3",
-		"peekView.border": "#268BD2",
+		"peekView.border": "#EEE8D5",
 		"peekViewTitleLabel.foreground": "#657B83",
 		"peekViewResult.background": "#FDF6E3",
 		"peekViewResult.fileForeground": "#657B83",
+		// 按钮颜色
+		"button.background": "#268BD2",
+		"button.foreground": "#FDF6E3",
+		"button.hoverBackground": "#268ad2b6",
+		// 输入框
+		"input.background": "#fdf6e3",
+		"input.foreground": "#657B83",
+		"input.border": "#93a1a1",
+		"input.placeholderForeground": "#93a1a1",
+		"inputOption.activeBackground": "#eee8d5",
+		"inputOption.activeForeground": "#268BD2",
+		"inputOption.activeBorder": "#268BD2",
+		// 下拉菜单
+		"dropdown.background": "#fdf6e3",
+		"dropdown.foreground": "#657B83",
+		"dropdown.border": "#93a1a1",
+		// 超链接
+		"textLink.foreground": "#268BD2",
+		"textLink.activeForeground": "#4B83CD",
 	},
 	"tokenColors": [
 		{
@@ -542,7 +552,7 @@
 			}
 		},
 		{
-			"name": "Python Function Parameter",  // Python函数参数
+			"name": "Python Function Parameter", // Python函数参数
 			"scope": [
 				"variable.parameter",
 				"meta.function.parameters.python"
