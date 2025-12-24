@@ -2,6 +2,7 @@
 	"name": "Solarized Light Flat",
 	"type": "light",
 	"colors": {
+        "selection.background": "#268BD233", // 选中文本背景色
 		// 标题栏
 		"titleBar.activeBackground": "#FDF6E3", // 标题栏（顶部）背景色
 		"titleBar.activeForeground": "#657B83", // 标题栏（顶部）前景色

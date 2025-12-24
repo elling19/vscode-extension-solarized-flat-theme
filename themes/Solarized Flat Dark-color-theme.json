@@ -2,6 +2,7 @@
     "name": "Solarized Flat Dark",
     "type": "dark",
     "colors": {
+        "selection.background": "#268BD233", // 选中文本背景色
         // 标题栏
         "titleBar.activeBackground": "#002b36", // 标题栏（顶部）背景色
         "titleBar.activeForeground": "#839496", // 标题栏（顶部）前景色
@@ -79,8 +80,8 @@
         "editor.lineHighlightBackground": "#073642",
         "editor.lineHighlightBorder": "#073642",
         // 编辑器高亮色
-        "editor.wordHighlightBackground": "#b5890033",
-        "editor.wordHighlightStrongBackground": "#cb4b1633",
+        "editor.wordHighlightBackground": "#268BD233",
+        "editor.wordHighlightStrongBackground": "#268BD233",
         // 编辑器提示窗口
         "editorHoverWidget.background": "#002B36",
         "editorHoverWidget.border": "#073642",
