@@ -2,7 +2,7 @@
 	"name": "Solarized Light Flat",
 	"type": "light",
 	"colors": {
-        "selection.background": "#268BD233", // 选中文本背景色
+		"selection.background": "#268BD233", // 选中文本背景色
 		// 标题栏
 		"titleBar.activeBackground": "#FDF6E3", // 标题栏（顶部）背景色
 		"titleBar.activeForeground": "#657B83", // 标题栏（顶部）前景色
@@ -48,11 +48,11 @@
 		"list.hoverForeground": "#657B83",
 		"list.focusOutline": "#EEE8D5", // 列表项聚焦边框色
 		// 面包屑导航
-        "breadcrumb.foreground": "#93A1A1",
-        "breadcrumb.background": "#FDF6E3",
-        "breadcrumb.focusForeground": "#657B83",
-        "breadcrumb.activeSelectionForeground": "#268bd2",
-        "breadcrumbPicker.background": "#FDF6E3",
+		"breadcrumb.foreground": "#93A1A1",
+		"breadcrumb.background": "#FDF6E3",
+		"breadcrumb.focusForeground": "#657B83",
+		"breadcrumb.activeSelectionForeground": "#268bd2",
+		"breadcrumbPicker.background": "#FDF6E3",
 		// 编辑器
 		"editor.background": "#FDF6E3", // 编辑器背景色
 		"editor.foreground": "#657B83", // 编辑器前景色
@@ -105,21 +105,21 @@
 		"terminal.foreground": "#657B83",
 		"terminal.background": "#FDF6E3",
 		"terminal.ansiBlack": "#073642",
-        "terminal.ansiRed": "#dc322f",
-        "terminal.ansiGreen": "#859900",
-        "terminal.ansiYellow": "#b58900",
-        "terminal.ansiBlue": "#268bd2",
-        "terminal.ansiMagenta": "#d33682",
-        "terminal.ansiCyan": "#2aa198",
-        "terminal.ansiWhite": "#eee8d5",
-        "terminal.ansiBrightBlack": "#586e75",
-        "terminal.ansiBrightRed": "#cb4b16",
-        "terminal.ansiBrightGreen": "#93a1a1",
-        "terminal.ansiBrightYellow": "#657b83",
-        "terminal.ansiBrightBlue": "#839496",
-        "terminal.ansiBrightMagenta": "#6c71c4",
-        "terminal.ansiBrightCyan": "#93a1a1",
-        "terminal.ansiBrightWhite": "#fdf6e3",
+		"terminal.ansiRed": "#dc322f",
+		"terminal.ansiGreen": "#859900",
+		"terminal.ansiYellow": "#b58900",
+		"terminal.ansiBlue": "#268bd2",
+		"terminal.ansiMagenta": "#d33682",
+		"terminal.ansiCyan": "#2aa198",
+		"terminal.ansiWhite": "#eee8d5",
+		"terminal.ansiBrightBlack": "#586e75",
+		"terminal.ansiBrightRed": "#cb4b16",
+		"terminal.ansiBrightGreen": "#93a1a1",
+		"terminal.ansiBrightYellow": "#657b83",
+		"terminal.ansiBrightBlue": "#839496",
+		"terminal.ansiBrightMagenta": "#6c71c4",
+		"terminal.ansiBrightCyan": "#93a1a1",
+		"terminal.ansiBrightWhite": "#fdf6e3",
 		"terminalCursor.foreground": "#DC322F",
 		"focusBorder": "#93A1A1", // 点击面板等其他区域时的边框颜色
 		// 通知栏
@@ -153,6 +153,15 @@
 		// 超链接
 		"textLink.foreground": "#268BD2",
 		"textLink.activeForeground": "#4B83CD",
+		// Git颜色
+		"gitDecoration.modifiedResourceForeground": "#b58900",
+		"gitDecoration.deletedResourceForeground": "#dc322f",
+		"gitDecoration.addedResourceForeground": "#859900",
+		"gitDecoration.untrackedResourceForeground": "#2aa198",
+		"gitDecoration.ignoredResourceForeground": "#93a1a1",
+		"gitDecoration.conflictingResourceForeground": "#d33682",
+		"diffEditor.insertedTextBackground": "#85990033",
+		"diffEditor.removedTextBackground": "#dc322f33",
 	},
 	"tokenColors": [
 		{
@@ -196,6 +205,38 @@
 			}
 		},
 		{
+			"name": "Diff / Git: Added",
+			"scope": [
+				"markup.inserted",
+				"markup.inserted.diff",
+				"punctuation.definition.inserted"
+			],
+			"settings": {
+				"foreground": "#859900"
+			}
+		},
+		{
+			"name": "Diff / Git: Modified",
+			"scope": [
+				"markup.changed",
+				"markup.changed.diff"
+			],
+			"settings": {
+				"foreground": "#b58900"
+			}
+		},
+		{
+			"name": "Diff / Git: Deleted",
+			"scope": [
+				"markup.deleted",
+				"markup.deleted.diff",
+				"punctuation.definition.deleted"
+			],
+			"settings": {
+				"foreground": "#dc322f"
+			}
+		},
+		{
 			"name": "Invalid - Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
@@ -226,7 +267,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#D33682"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -308,7 +349,7 @@
 			"name": "constant",
 			"scope": "constant.other",
 			"settings": {
-				"foreground": "#6C71C4"  // 其他常量
+				"foreground": "#6C71C4" // 其他常量
 			}
 		},
 		{
@@ -501,7 +542,7 @@
 			"name": "Markup: Heading",
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#CB4616"
+				"foreground": "#2AA198"
 			}
 		},
 		{
@@ -583,30 +624,26 @@
 			}
 		},
 		{
-            "name": "String Quotes",
-            "scope": [
-				"string.quoted.single.python punctuation.definition.string.begin.python",
-    			"string.quoted.single.python punctuation.definition.string.end.python",
-    			"string.quoted.double.python punctuation.definition.string.begin.python",
-    			"string.quoted.double.python punctuation.definition.string.end.python",
-    			"string.quoted.multi.python punctuation.definition.string.begin.python",
-    			"string.quoted.multi.python punctuation.definition.string.end.python"
-            ],
-            "settings": {
-                "foreground": "#2AA198" // 引号颜色
-            }
-        },
+			"name": "String Quotes",
+			"scope": [
+				"string.quoted.single punctuation.definition.string.begin",
+				"string.quoted.single punctuation.definition.string.end",
+				"string.quoted.double punctuation.definition.string.begin",
+				"string.quoted.double punctuation.definition.string.end",
+				"string.quoted.multi punctuation.definition.string.begin",
+				"string.quoted.multi punctuation.definition.string.end"
+			],
+			"settings": {
+				"foreground": "#2AA198" // 引号颜色
+			}
+		},
 		{
 			"name": "Python Docstring", // Python文档注释
 			"scope": [
 				"string.quoted.docstring.multi.python",
-				"comment.documentation",
-				"comment.block.documentation",
-				"comment.block.documentation.python punctuation.definition.string.begin.python",
-    			"comment.block.documentation.python punctuation.definition.string.end.python"
 			],
 			"settings": {
-				"foreground": "#93a1a1",
+				"foreground": "#93A1A1"
 			}
 		},
 		{
@@ -620,13 +657,35 @@
 			}
 		},
 		{
-			"name": "Other languages quote color",
 			"scope": [
-    			"string.quoted"
+				"storage.type.annotation.java",
+				"entity.name.type.annotation.java",
+				"variable.annotation.java"
 			],
 			"settings": {
-                "foreground": "#2AA198" // 其他语言引号颜色
-            }
+				"foreground": "#268BD2", // Java注解颜色
+			}
+		},
+		{
+			"name": "Dict: Keys",
+			"scope": [
+				"support.type.property-name.json",
+				"meta.structure.dictionary.key.json",
+				"string.quoted.double.json meta.structure.dictionary.key.json",
+				"string.key.json",
+			],
+			"settings": {
+				"foreground": "#268BD2" // json、dict、map等键颜色
+			}
+		},
+		{
+			"name": "Other languages quote color",
+			"scope": [
+				"string.quoted"
+			],
+			"settings": {
+				"foreground": "#2AA198" // 引号内颜色
+			}
 		}
 	]
 }
