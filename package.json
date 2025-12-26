@@ -1,9 +1,9 @@
 {
   "name": "solarized-flat-theme",
-  "displayName": "Solarized Flat Theme",
+  "displayName": "Solarized Flat Theme (Beta)",
   "description": "",
   "repository": {
-    "url": "https://github.com/elling19/vscode-extension-solarized-light-flat-theme"
+    "url": "https://github.com/elling19/vscode-extension-solarized-flat-theme"
   },
   "version": "0.0.1",
   "engines": {

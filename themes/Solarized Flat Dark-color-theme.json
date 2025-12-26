@@ -34,7 +34,7 @@
         // 标签页
         "tab.activeBackground": "#002b36", // 活动标签页背景色
         "tab.activeForeground": "#93A1A1", // 活动标签页前景色
-        "tab.inactiveBackground": "#002b36", // 非活动标签页背景色
+        "tab.inactiveBackground": "#073642", // 非活动标签页背景色
         "tab.inactiveForeground": "#586e75", // 非活动标签页
         "tab.border": "#002b36", // 标签页边框色
         "editorGroupHeader.tabsBackground": "#002b36", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
@@ -158,7 +158,7 @@
 		"gitDecoration.deletedResourceForeground": "#dc322f",
 		"gitDecoration.addedResourceForeground": "#859900",
 		"gitDecoration.untrackedResourceForeground": "#2aa198",
-		"gitDecoration.ignoredResourceForeground": "#93a1a1",
+		"gitDecoration.ignoredResourceForeground": "#586E75",
 		"gitDecoration.conflictingResourceForeground": "#d33682",
 		"diffEditor.insertedTextBackground": "#85990033",
 		"diffEditor.removedTextBackground": "#dc322f33",

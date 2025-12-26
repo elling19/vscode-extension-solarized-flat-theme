@@ -1,4 +1,4 @@
-# Solarized Flat README
+# Solarized Flat Theme (Beta)
 
 
 
