@@ -25,6 +25,7 @@
         "sideBarSectionHeader.foreground": "#839496", // 侧边栏标题前景色
         "sideBarTitle.foreground": "#839496", // 侧边栏标题前景色
         // 状态栏
+        "statusBar.noFolderBackground": "#002B36",
         "statusBar.background": "#002B36", // 状态栏（顶部终端等）背景色
         "statusBar.foreground": "#839496", // 状态栏前景色
         "statusBar.debuggingBackground": "#002B36", // 调试时状态栏背景色
