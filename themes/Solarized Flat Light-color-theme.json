@@ -248,7 +248,7 @@
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#2AA198"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -258,7 +258,7 @@
 				"storage"
 			],
 			"settings": {
-				"foreground": "#2AA198"
+				"foreground": "#268BD2"
 			}
 		},
 		{
@@ -279,7 +279,7 @@
 				"variable.language"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "#859900"
 			}
 		},
 		{
