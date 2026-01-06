@@ -104,23 +104,23 @@
         "panelTitle.inactiveForeground": "#586e75",
         // 终端
         "terminal.foreground": "#839496",
-        "terminal.background": "#002b36",
-        "terminal.ansiBlack": "#073642",
+        "terminal.background": "#002B36",
+        "terminal.ansiBlack": "#002B36",
         "terminal.ansiRed": "#dc322f",
         "terminal.ansiGreen": "#859900",
         "terminal.ansiYellow": "#b58900",
         "terminal.ansiBlue": "#268bd2",
         "terminal.ansiMagenta": "#d33682",
         "terminal.ansiCyan": "#2aa198",
-        "terminal.ansiWhite": "#eee8d5",
-        "terminal.ansiBrightBlack": "#586e75",
-        "terminal.ansiBrightRed": "#cb4b16",
-        "terminal.ansiBrightGreen": "#93a1a1",
-        "terminal.ansiBrightYellow": "#657b83",
-        "terminal.ansiBrightBlue": "#839496",
-        "terminal.ansiBrightMagenta": "#6c71c4",
-        "terminal.ansiBrightCyan": "#93a1a1",
-        "terminal.ansiBrightWhite": "#fdf6e3",
+        "terminal.ansiWhite": "#839496",
+        "terminal.ansiBrightBlack": "#002B36",
+		"terminal.ansiBrightRed": "#DC322F",
+		"terminal.ansiBrightGreen": "#859900",
+		"terminal.ansiBrightYellow": "#B58900",
+		"terminal.ansiBrightBlue": "#268BD2",
+		"terminal.ansiBrightMagenta": "#D33682",
+		"terminal.ansiBrightCyan": "#2AA198",
+		"terminal.ansiBrightWhite": "#839496",
         "terminalCursor.foreground": "#D3322F",
         "focusBorder": "#586e75", // 点击面板等其他区域时的边框颜色
         // 通知栏
@@ -301,25 +301,7 @@
             }
         },
         {
-            "name": "Functions",
-            "scope": [
-                "entity.name.function", // 函数声明
-            ],
-            "settings": {
-                "foreground": "#268BD2"
-            }
-        },
-        {
-            "name": "Functions",
-            "scope": [
-                "support.function" // 函数调用
-            ],
-            "settings": {
-                "foreground": "#268BD2"
-            }
-        },
-        {
-            "name": "Function Parameter", // 函数参数
+            "name": "Parameter", // 函数参数
             "scope": [
                 "variable.parameter",
                 "meta.function.parameters"
@@ -329,29 +311,10 @@
             }
         },
         {
-            "name": "Classes", // 类
-            "scope": [
-                "entity.name.type",
-                "entity.other.inherited-class",
-                "support.class"
-            ],
-            "settings": {
-                "fontStyle": "bold",
-                "foreground": "#268BD2"
-            }
-        },
-        {
             "name": "Exceptions",
             "scope": "entity.name.exception",
             "settings": {
                 "foreground": "#DC322F"
-            }
-        },
-        {
-            "name": "Sections",
-            "scope": "entity.name.section",
-            "settings": {
-                "fontStyle": "bold"
             }
         },
         {
@@ -487,13 +450,6 @@
             }
         },
         {
-            "name": "CSS: Important Keyword",
-            "scope": "keyword.other.important",
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
-        {
             "name": "Markup: Changed",
             "scope": "markup.changed",
             "settings": {
@@ -561,13 +517,6 @@
             }
         },
         {
-            "name": "Markup: Strong",
-            "scope": "markup.bold",
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
-        {
             "name": "Markup: Traceback",
             "scope": "markup.traceback",
             "settings": {
@@ -631,10 +580,25 @@
                 "string.quoted.double punctuation.definition.string.begin",
                 "string.quoted.double punctuation.definition.string.end",
                 "string.quoted.multi punctuation.definition.string.begin",
-                "string.quoted.multi punctuation.definition.string.end"
+                "string.quoted.multi punctuation.definition.string.end",
+                "punctuation.definition.string.template.begin.ts", // ts文件反引号
+				"punctuation.definition.string.template.end.ts",
+				"punctuation.definition.string.template.begin.js", // js文件反引号
+				"punctuation.definition.string.template.end.js",
             ],
             "settings": {
                 "foreground": "#2AA198" // 引号颜色
+            }
+        },
+        {
+            "name": "String Interpolation Punctuation", // 字符串插值括号 (JS/TS ${})
+            "scope": [
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end",
+                "punctuation.section.embedded"
+            ],
+            "settings": {
+                "foreground": "#268BD2"
             }
         },
         {
@@ -671,10 +635,58 @@
         {
             "name": "Other languages quote color",
             "scope": [
-                "string.quoted"
+                "string.quoted",
             ],
             "settings": {
                 "foreground": "#2AA198" // 引号内颜色
+            }
+        },
+        {
+            "name": "Yellow",
+            "scope": [
+
+            ],
+            "settings": {
+                "foreground": "#B58900",
+            }
+        },
+        {
+            "name": "Green",
+            "scope": [
+                "support.function.magic.python",  // Python魔法函数
+                "variable.parameter.function.language.special.self.python", // Python的self参数
+            ],
+            "settings": {
+                "foreground": "#859900",
+            }
+        },
+        {
+            "name": "Magenta",
+            "scope": [
+                // 类相关
+                "entity.name.type.class",  // 类
+                "entity.name.type.interface", // 接口
+                "entity.other.inherited-class", // 继承的类名
+                "meta.enum", // 枚举名
+                // 函数相关
+                "meta.definition.function", // 函数定义
+                "meta.function.python",  // Python函数
+                "meta.method.identifier.java", // Java方法名
+            ],
+            "settings": {
+                "foreground": "#D33682",
+            }
+        },
+        {
+            "name": "Blue",
+            "scope": [
+                "meta.function-call", // 函数调用
+                "meta.method-call", // 方法调用
+				"punctuation.definition.decorator.python", // Python装饰器@
+                "meta.attribute.python", // Python属性
+            ],
+            "settings": {
+                "foreground": "#268BD2",
             }
         }
     ]
