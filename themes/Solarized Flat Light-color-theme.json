@@ -644,7 +644,7 @@
 		{
             "name": "Yellow",
             "scope": [
-
+				"punctuation.definition.decorator.python", // Python装饰器@符号
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -682,7 +682,7 @@
             "scope": [
                 "meta.function-call", // 函数调用
                 "meta.method-call", // 方法调用
-				"punctuation.definition.decorator.python", // Python装饰器@
+				"meta.function.decorator.python", // Python装饰器函数
                 "meta.attribute.python", // Python属性
             ],
             "settings": {
