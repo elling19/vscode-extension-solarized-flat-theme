@@ -199,10 +199,10 @@
 			"name": "Comments: Documentation",
 			"scope": [
 				"comment.documentation",
-				"comment.block.documentation"
+				"comment.block.documentation"  // 文档注释
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "#2AA198"
 			}
 		},
 		{
@@ -283,15 +283,23 @@
 			}
 		},
 		{
-			"name": "Variables", // 变量
-			"scope": [
-				"variable",
-				"support.variable"
-			],
-			"settings": {
-				"foreground": "#6C71C4"
-			}
-		},
+            "name": "Variables",
+            "scope": [
+                "variable",  // 自定义变量
+            ],
+            "settings": {
+                "foreground": "#657B83"
+            }
+        },
+        {
+            "name": "Variables",
+            "scope": [
+                "support.variable"  // 系统变量
+            ],
+            "settings": {
+                "foreground": "#6C71C4"
+            }
+        },
 		{
 			"name": "Functions",
 			"scope": [
@@ -310,6 +318,16 @@
 				"foreground": "#268BD2"
 			}
 		},
+		{
+            "name": "Function Parameter", // 函数参数
+            "scope": [
+                "variable.parameter",
+                "meta.function.parameters"
+            ],
+            "settings": {
+                "foreground": "#D33682"
+            }
+        },
 		{
 			"name": "Classes", // 类
 			"scope": [
@@ -337,22 +355,16 @@
 			}
 		},
 		{
-			"name": "Numbers, Characters", // 数字，字符常量
-			"scope": [
-				"constant.numeric",
-				"constant.character",
-			],
-			"settings": {
-				"foreground": "#6C71C4"
-			}
-		},
-		{
-			"name": "constant",
-			"scope": "constant.other",
-			"settings": {
-				"foreground": "#6C71C4" // 其他常量
-			}
-		},
+            "name": "Numbers, Characters",
+            "scope": [
+                "constant.numeric",  // 数字常量
+                "constant.character",  // 字符常量
+                "constant.other",  // 其他常量
+            ],
+            "settings": {
+                "foreground": "#B58900"
+            }
+        },
 		{
 			"name": "Strings",
 			"scope": "string", // 字符串常量
@@ -362,42 +374,30 @@
 		},
 		{
 			"name": "Strings: Escape Sequences",
-			"scope": "constant.character.escape",
+			"scope": "constant.character.escape", // 转义字符
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "#93A1A1"
 			}
 		},
 		{
 			"name": "Strings: Regular Expressions",
-			"scope": "string.regexp",
+			"scope": "string.regexp",  // 正则表达式
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "#268BD2"
 			}
 		},
 		{
 			"name": "Strings: Symbols",
 			"scope": "constant.other.symbol",
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "#B58900"  // 符号常量
 			}
 		},
 		{
 			"name": "Punctuation",
 			"scope": "punctuation",
 			"settings": {
-				"foreground": "#777777"
-			}
-		},
-		{
-			"name": "HTML: Doctype Declaration",
-			"scope": [
-				"meta.tag.sgml.doctype",
-				"meta.tag.sgml.doctype string",
-				"meta.tag.sgml.doctype entity.name.tag",
-				"meta.tag.sgml punctuation.definition.tag.html"
-			],
-			"settings": {
-				"foreground": "#AAAAAA"
+				"foreground": "#657B83"  // 标点符号
 			}
 		},
 		{
@@ -416,7 +416,7 @@
 			"name": "HTML: Tag Names",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -426,8 +426,7 @@
 				"entity.other.attribute-name.html"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#91B3E0"
+				"foreground": "#D33682"
 			}
 		},
 		{
@@ -446,17 +445,27 @@
 				"meta.selector",
 				"meta.selector entity",
 				"meta.selector entity punctuation",
-				"entity.name.tag.css"
+				"entity.name.tag.css",
+                "meta.selector.css",
+                "entity.name.tag.scss",
+                "entity.name.tag.sass",
+                "entity.other.attribute-name.class.css",
+                "entity.other.attribute-name.id.css",
+                "entity.other.attribute-name.pseudo-class.css",
+                "entity.other.attribute-name.pseudo-element.css"
 			],
 			"settings": {
-				"foreground": "#6C71C4"
+				"foreground": "#D33682"
 			}
 		},
 		{
 			"name": "CSS: Property Names",
 			"scope": [
 				"meta.property-name",
-				"support.type.property-name"
+				"support.type.property-name",
+				"support.type.property-name.css",
+				"meta.property-name.scss",
+				"meta.property-name.sass"
 			],
 			"settings": {
 				"foreground": "#2AA198"
@@ -467,10 +476,14 @@
 			"scope": [
 				"meta.property-value",
 				"meta.property-value constant.other",
-				"support.constant.property-value"
+				"support.constant.property-value",
+				"meta.property-value.scss",
+				"meta.property-value.sass",
+				"meta.property-value.css",
+				"support.constant.property-value.css"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -543,7 +556,8 @@
 			"name": "Markup: Heading",
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#2AA198"
+				"foreground": "#D33682",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -578,17 +592,27 @@
 			"name": "Markup Lists",
 			"scope": "markup.list",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "#586E75"
 			}
 		},
 		{
-			"name": "Markup Styling",
+			"name": "Markup Blod",
 			"scope": [
 				"markup.bold",
+			],
+			"settings": {
+				"foreground": "#2AA198",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup italic",
+			"scope": [
 				"markup.italic"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "#859900",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -596,32 +620,7 @@
 			"scope": "markup.inline.raw",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#AB6526"
-			}
-		},
-		{
-			"name": "Extra: Diff Range",
-			"scope": [
-				"meta.diff.range",
-				"meta.diff.index",
-				"meta.separator"
-			],
-			"settings": {
-				"foreground": "#434343"
-			}
-		},
-		{
-			"name": "Extra: Diff From",
-			"scope": "meta.diff.header.from-file",
-			"settings": {
-				"foreground": "#434343"
-			}
-		},
-		{
-			"name": "Extra: Diff To",
-			"scope": "meta.diff.header.to-file",
-			"settings": {
-				"foreground": "#434343"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -645,16 +644,6 @@
 			],
 			"settings": {
 				"foreground": "#93A1A1"
-			}
-		},
-		{
-			"name": "Python Function Parameter", // Python函数参数
-			"scope": [
-				"variable.parameter",
-				"meta.function.parameters.python"
-			],
-			"settings": {
-				"foreground": "#6C71C4"
 			}
 		},
 		{
