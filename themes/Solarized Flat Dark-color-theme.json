@@ -255,7 +255,7 @@
             "name": "Keywords", // 关键字
             "scope": [
                 "keyword",
-                "storage"
+                // "storage"
             ],
             "settings": {
                 "foreground": "#268BD2"
@@ -264,7 +264,7 @@
         {
             "name": "Types",
             "scope": [
-                "storage.type",
+                // "storage.type",
                 "support.type"
             ],
             "settings": {
@@ -644,7 +644,7 @@
         {
             "name": "Yellow",
             "scope": [
-                "punctuation.definition.decorator.python", // Python装饰器@符号
+                "meta.method.return-type.java",  // Java方法返回类型
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -654,7 +654,12 @@
             "name": "Green",
             "scope": [
                 "support.function.magic.python",  // Python魔法函数
+                "support.variable.magic.python",  // Python魔法变量
                 "variable.parameter.function.language.special.self.python", // Python的self参数
+                "punctuation.definition.decorator.python", // Python装饰器@符号
+				"punctuation.definition.annotation.java", // Java注解@符号
+                "keyword.other.package.java",  // Java包导入关键字
+				"keyword.other.import.java",  // Java导入关键字
             ],
             "settings": {
                 "foreground": "#859900",
@@ -684,9 +689,30 @@
                 "meta.method-call", // 方法调用
                 "meta.function.decorator.python", // Python装饰器函数
                 "meta.attribute.python", // Python属性
+                "meta.method-call.java",
+                "meta.definition.variable.java", // Java变量定义
             ],
             "settings": {
                 "foreground": "#268BD2",
+            }
+        },
+        {
+            "name": "Violet",
+            "scope": [
+                "keyword.control.flow.python", // Python控制流关键字
+                "storage.modifier.java", // Java修饰符
+                "keyword.control.java", // Java控制关键字
+            ],
+            "settings": {
+                "foreground": "#6C71C4",
+            }
+        },
+        {
+            "name": "Cyan",
+            "scope": [
+            ],
+            "settings": {
+                "foreground": "#2AA198",
             }
         }
     ]
