@@ -645,6 +645,7 @@
             "name": "Yellow",
             "scope": [
                 "meta.method.return-type.java",  // Java方法返回类型
+                "storage.modifier.package.java", // Java包名
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -656,10 +657,13 @@
                 "support.function.magic.python",  // Python魔法函数
                 "support.variable.magic.python",  // Python魔法变量
                 "variable.parameter.function.language.special.self.python", // Python的self参数
-                "punctuation.definition.decorator.python", // Python装饰器@符号
-				"punctuation.definition.annotation.java", // Java注解@符号
+                "storage.type.class.python", // python 类定义关键字
+                "storage.type.function.python", // python 函数定义关键字
+                "storage.type.java", // Java类型定义关键字
                 "keyword.other.package.java",  // Java包导入关键字
 				"keyword.other.import.java",  // Java导入关键字
+                "meta.definition.variable.java", // Java变量定义
+                "storage.type.local.java", // Java局部变量定义关键字:var
             ],
             "settings": {
                 "foreground": "#859900",
@@ -676,7 +680,7 @@
                 // 函数相关
                 "meta.definition.function", // 函数定义
                 "meta.function.python",  // Python函数
-                "meta.method.identifier.java", // Java方法名
+                "meta.method.identifier.java", // Java方法名，参数类型
             ],
             "settings": {
                 "foreground": "#D33682",
@@ -687,10 +691,9 @@
             "scope": [
                 "meta.function-call", // 函数调用
                 "meta.method-call", // 方法调用
-                "meta.function.decorator.python", // Python装饰器函数
                 "meta.attribute.python", // Python属性
                 "meta.method-call.java",
-                "meta.definition.variable.java", // Java变量定义
+                "variable.parameter.java", // Java函数参数
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -705,6 +708,19 @@
             ],
             "settings": {
                 "foreground": "#6C71C4",
+            }
+        },
+        {
+            "name": "Orange",
+            "scope": [
+                "punctuation.definition.decorator.python", // Python装饰器@符号
+                "meta.function.decorator.python", // Python装饰器函数
+                "storage.type.generic.java", // Java泛型类型关键字
+				"punctuation.definition.annotation.java", // Java注解@符号
+                "storage.type.annotation.java",  // Java注解类型关键字
+            ],
+            "settings": {
+                "foreground": "#CB4B16",
             }
         },
         {
