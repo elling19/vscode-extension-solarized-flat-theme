@@ -314,8 +314,6 @@
                 "keyword.operator",
                 "storage.type",
                 "support.type",
-                "punctuation.definition.tag.begin.html", // HTML标签开始符号<
-                "punctuation.definition.tag.end.html", // HTML标签结束符号>
                 "entity.name.tag.html", // HTML标签名
 				"entity.name.tag.style", // style标签
 				"entity.name.tag.script", // script标签
@@ -327,12 +325,13 @@
                 "storage.type.java", // Java类型定义关键字
                 "keyword.other.package.java",  // Java包导入关键字
 				"keyword.other.import.java",  // Java导入关键字
-                "meta.definition.variable.java", // Java变量定义
                 "storage.type.local.java", // Java局部变量定义关键字:var
                 "storage.type.primitive.java", // Java基本类型关键字
                 "storage.type.object.array.java", // Java数组类型关键字
                 "storage.modifier.java", // Java修饰符
                 "storage.type.function.arrow.ts", // TS箭头函数关键字
+                "keyword.other.directive.using.cs", // C# using指令关键字
+				"storage.modifier"
             ],
             "settings": {
                 "foreground": "#859900",
@@ -373,7 +372,10 @@
 				"variable.annotation.java", // Java注解变量
                 "source.ts.embedded.html.vue", // Vue文件中的TS代码
                 "entity.other.attribute-name.class.css", // css class属性
+                "entity.other.attribute-name.id.css", // css id属性
                 "entity.name.tag.css", // 内置css属性名,例如div、p 
+				"entity.name.type.namespace",  // 命名空间
+				"entity.name.function.cs", // C#函数名
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -430,9 +432,17 @@
 			"name": "Gray",
 			"scope": [
                 "comment",
+                "punctuation.separator",
+                "punctuation.accessor", // 访问符号.
+                "punctuation.definition.tag.begin.html", // HTML标签开始符号<
+                "punctuation.definition.tag.end.html", // HTML标签结束符号>
+                "punctuation.terminator.rule", // css/scss语句结束分号
                 "punctuation.definition.comment",  // 注释符号
 				"string.quoted.docstring.multi.python",  // Python文档注释
                 "constant.character.escape",  // 转义字符
+                "punctuation.terminator.java", // Java语句结束分号
+                "punctuation.section.function.begin.python", // python函数开始冒号
+				"punctuation.terminator.statement.cs", // C#语句结束分号
 			],
 			"settings": {
 				"foreground": "#586E75"
@@ -441,10 +451,8 @@
         {
 			"name": "Foreground Default",  // 默认前景色
 			"scope": [
-                "punctuation",  // 标点符号
             ],
 			"settings": {
-				"foreground": "#839496"
 			}
 		}
     ]
