@@ -355,7 +355,7 @@
 				"meta.enum", // 枚举名
                 // 函数相关
                 "meta.definition.function", // 函数定义
-                "meta.function.python",  // Python函数
+                "source.python.gs.function.definition.name", // Python函数名
 				"meta.method.identifier.java", // Java方法名，参数类型
 				"entity.name.tag.template.html.vue", // Vue模板标签名
 				"entity.name.type.result.rust", // Rust函数返回类型
@@ -434,7 +434,6 @@
 		{
             "name": "Red",
             "scope": [
-				"entity.name.function.mycustom.python",
             ],
             "settings": {
                 "foreground": "#DC322F",
