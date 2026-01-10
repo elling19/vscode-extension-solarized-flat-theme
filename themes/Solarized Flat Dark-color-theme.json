@@ -300,6 +300,9 @@
                 "constant.other.symbol",  // 符号常量
                 "meta.method.return-type.java",  // Java方法返回类型
                 "storage.modifier.package.java", // Java包名
+                "keyword.other.fn.rust", // Rust函数关键字fn
+                "keyword.other.crate.rust", // Rust crate关键字
+                "keyword.operator.borrow.and.rust", // Rust引用操作符&
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -331,7 +334,9 @@
                 "storage.modifier.java", // Java修饰符
                 "storage.type.function.arrow.ts", // TS箭头函数关键字
                 "keyword.other.directive.using.cs", // C# using指令关键字
-				"storage.modifier"
+                "entity.name.type.rust",
+				"keyword.other.rust",
+                "keyword.control.rust",
             ],
             "settings": {
                 "foreground": "#859900",
@@ -352,6 +357,10 @@
                 "meta.function.python",  // Python函数
                 "meta.method.identifier.java", // Java方法名，参数类型
                 "entity.name.tag.template.html.vue", // Vue模板标签名
+				"entity.name.type.result.rust", // Rust函数返回类型
+                "entity.name.type.struct.rust", // Rust结构体名
+                "entity.name.type.enum.rust", // Rust枚举名
+				"entity.name.function.macro.rust", // Rust宏函数名
             ],
             "settings": {
                 "foreground": "#D33682",
@@ -360,7 +369,6 @@
         {
             "name": "Blue",
             "scope": [
-                "keyword", // 关键字
                 "string.regexp",  // 正则表达式
                 "meta.function-call", // 函数调用
                 "meta.method-call", // 方法调用
@@ -376,6 +384,7 @@
                 "entity.name.tag.css", // 内置css属性名,例如div、p 
 				"entity.name.type.namespace",  // 命名空间
 				"entity.name.function.cs", // C#函数名
+                "entity.name.function.rust",
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -392,6 +401,7 @@
                 "meta.attribute.python", // Python属性
                 "meta.object-literal.key.ts", // TS对象属性
                 "support.type.property-name.css", // CSS属性名
+                "entity.name.namespace.rust", // Rust命名空间名
             ],
             "settings": {
                 "foreground": "#6C71C4",
@@ -443,6 +453,12 @@
                 "punctuation.terminator.java", // Java语句结束分号
                 "punctuation.section.function.begin.python", // python函数开始冒号
 				"punctuation.terminator.statement.cs", // C#语句结束分号
+                "punctuation.semi.rust",
+                "punctuation.definition.attribute.rust",
+                "punctuation.comma.rust",
+                "keyword.operator.key-value.rust",  // Rust键值对操作符:
+				"punctuation.brackets.angle.rust",  // Rust尖括号<>
+                "keyword.operator.namespace.rust", // Rust命名空间操作符::
 			],
 			"settings": {
 				"foreground": "#586E75"
@@ -453,6 +469,7 @@
 			"scope": [
             ],
 			"settings": {
+                "foreground": "#839496"
 			}
 		}
     ]
