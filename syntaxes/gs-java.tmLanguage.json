@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Java Grammar Support",
+  "scopeName": "source.java.gs",
+  "injectionSelector": "L:source.java",
+  "patterns": [
+    {
+      "match": "\\b(class)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+      "captures": {
+        "1": {
+          "name": "storage.modifier.java source.java.gs.keyword.class"
+        },
+        "2": {
+          "name": "entity.name.type.class.java source.java.gs.class.definition.name"
+        }
+      }
+    }
+  ]
+}

@@ -298,6 +298,7 @@
                 "constant.character",  // 字符常量
                 "constant.other",  // 其他常量
 				"constant.other.symbol",  // 符号常量
+				"source.python.gs.function.definition.def",
 				"meta.method.return-type.java",  // Java方法返回类型
 				"storage.modifier.package.java", // Java包名
 				"keyword.other.fn.rust", // Rust函数关键字fn
@@ -433,6 +434,7 @@
 		{
             "name": "Red",
             "scope": [
+				"entity.name.function.mycustom.python",
             ],
             "settings": {
                 "foreground": "#DC322F",
