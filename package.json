@@ -15,38 +15,6 @@
     "Themes"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "python",
-        "extensions": [
-          ".py"
-        ]
-      },
-      {
-        "id": "java",
-        "extensions": [
-          ".java"
-        ]
-      }
-    ],
-    "grammars": [
-      {
-        "scopeName": "source.python.gs",
-        "path": "./syntaxes/gs-python.tmLanguage.json",
-        "injectTo": [
-          "source.python"
-        ],
-        "languaige": "python"
-      },
-      {
-        "scopeName": "source.java.gs",
-        "path": "./syntaxes/gs-java.tmLanguage.json",
-        "injectTo": [
-          "source.java"
-        ],
-        "language": "java"
-      }
-    ],
     "themes": [
       {
         "label": "Solarized Flat Light",

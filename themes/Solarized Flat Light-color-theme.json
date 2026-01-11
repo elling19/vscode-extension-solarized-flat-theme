@@ -294,16 +294,22 @@
 		{
             "name": "Yellow",
             "scope": [
+				"storage.modifier", // 修饰符
+                "keyword.control", // 控制关键字
 				"constant.numeric",  // 数字常量
                 "constant.character",  // 字符常量
                 "constant.other",  // 其他常量
 				"constant.other.symbol",  // 符号常量
-				"source.python.gs.function.definition.def",
+				"storage.type.class.python", // python 类定义关键字
+				"storage.type.function.python", // python 函数定义关键字
 				"meta.method.return-type.java",  // Java方法返回类型
-				"storage.modifier.package.java", // Java包名
+                "storage.modifier.java", // Java修饰符
 				"keyword.other.fn.rust", // Rust函数关键字fn
                 "keyword.other.crate.rust", // Rust crate关键字
                 "keyword.operator.borrow.and.rust", // Rust引用操作符&
+                "storage.type.namespace.cs", // C#命名空间类型关键字
+				"storage.type.class.cs", // C#类定义关键字
+				"keyword.other.typedef.c", // C typedef关键字
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -312,32 +318,35 @@
         {
             "name": "Green",
             "scope": [
-				"keyword.operator",
-				"storage.type",
-                "support.type",
+                "entity.name.tag", 
 				"constant.language",
-				"support.constant",
-				"variable.language",
+                "support.constant",
+                "variable.language",
+                "keyword.operator",
+                "storage.type",
+                "keyword.type",
+                "support.type",
                 "entity.name.tag.html", // HTML标签名
 				"entity.name.tag.style", // style标签
 				"entity.name.tag.script", // script标签
                 "support.function.magic.python",  // Python魔法函数
 				"support.variable.magic.python",  // Python魔法变量
                 "variable.parameter.function.language.special.self.python", // Python的self参数
-				"storage.type.class.python", // python 类定义关键字
-				"storage.type.function.python", // python 函数定义关键字
 				"storage.type.java", // Java类型定义关键字
 				"keyword.other.package.java",  // Java包导入关键字
 				"keyword.other.import.java",  // Java导入关键字
 				"storage.type.local.java", // Java局部变量定义关键字:var
 				"storage.type.primitive.java", // Java基本类型关键字
 				"storage.type.object.array.java", // Java数组类型关键字
-                "storage.modifier.java", // Java修饰符
 				"storage.type.function.arrow.ts", // TS箭头函数关键字
 				"keyword.other.directive.using.cs", // C# using指令关键字
                 "entity.name.type.rust",
 				"keyword.other.rust",
 				"keyword.control.rust",
+				"entity.name.type.cs", // C#类型名
+                "keyword.control.directive.include.c",  // c include
+				"keyword.control.directive.include.cpp",  // c++ include
+				"support.function.construct.php", // PHP构造函数
 			],
             "settings": {
                 "foreground": "#859900",
@@ -346,7 +355,6 @@
 		{
             "name": "Magenta",
             "scope": [
-				"variable.parameter",
                 "meta.function.parameters",
                 // 类相关
                 "entity.name.type.class",  // 类
@@ -355,13 +363,21 @@
 				"meta.enum", // 枚举名
                 // 函数相关
                 "meta.definition.function", // 函数定义
-                "source.python.gs.function.definition.name", // Python函数名
-				"meta.method.identifier.java", // Java方法名，参数类型
+				"entity.name.function.python", // Python函数名
+				"meta.method.identifier.java", // Java方法名
+                "keyword.control.new.java", // Java new关键字
 				"entity.name.tag.template.html.vue", // Vue模板标签名
+				"meta.function.definition.rust", // Rust函数定义
 				"entity.name.type.result.rust", // Rust函数返回类型
 				"entity.name.type.struct.rust", // Rust结构体名
                 "entity.name.type.enum.rust", // Rust枚举名
 				"entity.name.function.macro.rust", // Rust宏函数名
+                "meta.function.definition.parameters.c", // C函数
+                "entity.name.type.class.cpp", // C++类名
+                "entity.name.function.definition.cpp", // C++函数定义
+				"entity.name.type.struct.cpp", // C++结构体名
+				"meta.function.php", // PHP函数名
+                "support.function.construct.output.php", // PHP输出函数
             ],
             "settings": {
                 "foreground": "#D33682",
@@ -375,17 +391,16 @@
                 "meta.method-call", // 方法调用
 				"entity.other.attribute-name.html", // HTML属性名
 				"meta.method-call.java", // Java方法调用
-                "variable.parameter.java", // Java函数参数
 				"storage.type.annotation.java",  // Java注解类型关键字
 				"entity.name.type.annotation.java",  // Java注解名
 				"variable.annotation.java", // Java注解变量
+                "meta.function.call.rust", // Rust函数调用
 				"source.ts.embedded.html.vue", // Vue文件中的TS代码
 				"entity.other.attribute-name.class.css", // css class属性
 				"entity.other.attribute-name.id.css", // css id属性
 				"entity.name.tag.css", // 内置css属性名,例如div、p 
-				"entity.name.type.namespace",  // 命名空间
 				"entity.name.function.cs", // C#函数名
-                "entity.name.function.rust",
+				"entity.other.attribute-name.localname.xml",
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -394,15 +409,20 @@
 		{
             "name": "Violet",
             "scope": [
+				"variable.parameter",
                 "support.variable",  // 系统变量
-                "keyword.control", // 控制关键字
 				"variable.object.property", // 变量对象属性
 				"variable.other.property", // 其他对象属性
 				"variable.other.object.property", // 其他变量对象属性
+				"entity.name.type.namespace",  // 命名空间
                 "meta.attribute.python", // Python属性
+				"storage.modifier.package.java", // Java包名
+                "variable.parameter.java", // Java函数参数
 				"meta.object-literal.key.ts", // TS对象属性
 				"support.type.property-name.css", // CSS属性名
 				"entity.name.namespace.rust", // Rust命名空间名
+				"entity.name.variable.parameter.cs", // C#函数参数名
+                "meta.function.parameters.php", // PHP函数参数
             ],
             "settings": {
                 "foreground": "#6C71C4",
@@ -459,7 +479,11 @@
 				"punctuation.comma.rust",
                 "keyword.operator.key-value.rust",
 				"punctuation.brackets.angle.rust",
-                "keyword.operator.namespace.rust"
+                "keyword.operator.namespace.rust",
+				"keyword.operator.arrow.skinny.rust", // Rust箭头操作符->
+                "keyword.operator.access.dot.rust", // Rust访问操作符.
+				"punctuation.section.embedded.begin.php", // PHP嵌入开始标签<?php
+                "punctuation.section.embedded.end.php", // PHP嵌入结束标签
 			],
 			"settings": {
 				"foreground": "#93A1A1"
@@ -468,6 +492,10 @@
 		{
 			"name": "Foreground Default",  // 默认前景色
 			"scope": [
+				"storage.modifier.import.java", // Java导入
+				"meta.preprocessor.include.c", // C预处理包含头文件
+				"string.quoted.double.include.c", // C包含头文件字符串
+                "string.quoted.double.include.cpp", // C++包含头文件字符串
 			],
 			"settings": {
 				"foreground": "#657B83"
