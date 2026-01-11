@@ -1,0 +1,38 @@
+
+{
+  "name": "Solarized Flat",
+  "version": "2.0.0",
+  "colors": [
+    "#002b36",
+    "#839496",
+    "#b58900",
+    null,
+    false,
+    123
+  ],
+  "enabled": true,
+  "settings": {
+    "theme": "dark",
+    "contrast": 0.9,
+    "features": ["flat", "solarized", {"experimental": true}],
+    "overrides": {
+      "editor": {
+        "fontSize": 14,
+        "fontFamily": "Fira Code, monospace",
+        "lineNumbers": true
+      },
+      "terminal": {
+        "background": "#002b36",
+        "cursorBlink": false
+      }
+    }
+  },
+  "users": [
+    {"id": 1, "name": "Alice", "active": true},
+    {"id": 2, "name": "Bob", "active": false}
+  ],
+  "meta": {
+    "created": "2026-01-11T12:00:00Z",
+    "tags": ["theme", "json", "test"]
+  }
+}

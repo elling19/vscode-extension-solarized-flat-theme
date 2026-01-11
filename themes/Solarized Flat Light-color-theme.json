@@ -258,9 +258,11 @@
 		},
 		{
 			"name": "Markup Lists",
-			"scope": "markup.list",
+			"scope": [
+				"markup.list.unnumbered.markdown"
+			],
 			"settings": {
-				"foreground": "#586E75"
+				"foreground": "#859900"
 			}
 		},
 		{
@@ -292,6 +294,13 @@
 			}
 		},
 		{
+            "name": "Markup Code Block",
+            "scope": "markup.fenced_code.block",
+            "settings": {
+                "foreground": "#93A1A1"
+            }
+        },
+		{
             "name": "Yellow",
             "scope": [
 				"storage.modifier", // 修饰符
@@ -310,6 +319,19 @@
                 "storage.type.namespace.cs", // C#命名空间类型关键字
 				"storage.type.class.cs", // C#类定义关键字
 				"keyword.other.typedef.c", // C typedef关键字
+				"meta.enum.definition.cpp",
+				"storage.type.template.cpp", // C++模板类型关键字
+				"storage.type.class.cpp",  // C++类定义关键字
+				"storage.type.modifier.access", // C++访问修饰符
+                "storage.type.enum.enum-key.class.cpp", // C++枚举定义关键字
+				"keyword.other.using.directive.cpp", // C++ using指令关键字
+                "keyword.declaration.dart", // Dart声明关键字
+                "keyword.type.go", // Go类型关键字
+				"keyword.interface.go", // Go接口关键字
+                "keyword.struct.go", // Go结构体关键字
+				"keyword.function.go", // Go函数关键字
+                "keyword.local.lua", // Lua局部变量关键字
+				"variable.other.constant.ruby", // Ruby常量变量
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -329,6 +351,8 @@
                 "entity.name.tag.html", // HTML标签名
 				"entity.name.tag.style", // style标签
 				"entity.name.tag.script", // script标签
+				"keyword.control.import.python", // Python导入关键字
+                "keyword.control.from.python", // Python导入关键字
                 "support.function.magic.python",  // Python魔法函数
 				"support.variable.magic.python",  // Python魔法变量
                 "variable.parameter.function.language.special.self.python", // Python的self参数
@@ -346,7 +370,30 @@
 				"entity.name.type.cs", // C#类型名
                 "keyword.control.directive.include.c",  // c include
 				"keyword.control.directive.include.cpp",  // c++ include
+                "entity.name.type.cpp", // C++类型名
+				"entity.name.type.template.cpp", // C++模板类型名
 				"support.function.construct.php", // PHP构造函数
+                "keyword.other.namespace.php", // PHP命名空间关键字
+				"support.function.constructor.php", // PHP构造函数
+				"support.class.dart", // Dart类名
+                "keyword.other.import.dart", // Dart导入关键字
+				"entity.name.type.go", // Go类型名
+				"keyword.package.go", // Go包关键字
+                "keyword.control.import.go", // Go导入关键字
+				"support.function.lua", // Lua内置函数
+                "support.function.library.lua", // Lua库函数
+                "keyword.other.special-method.ruby", // Ruby特殊方法关键字
+                "support.function.kernel.ruby", // Ruby内置函数
+				"entity.name.function.macro.rules.rust", // Rust宏规则函数
+                "entity.name.type.numeric.rust", // Rust数值类型
+				"entity.name.type.primitive.rust",  // Rust基本类型
+				"entity.name.type.result.rust", // Rust函数返回类型
+				"keyword.other.sql", // SQL关键字
+                "keyword.other.alias.sql", // SQL别名关键字
+				"keyword.other.LUW.sql", // SQL LUW关键字
+                "keyword.other.DML.II.sql", // SQL DML关键字
+				"keyword.other.DDL.create.II.sql", // SQL DDL创建关键字
+                "entity.name.type.ts", // TS类型名
 			],
             "settings": {
                 "foreground": "#859900",
@@ -355,7 +402,6 @@
 		{
             "name": "Magenta",
             "scope": [
-                "meta.function.parameters",
                 // 类相关
                 "entity.name.type.class",  // 类
                 "entity.name.type.interface", // 接口
@@ -365,19 +411,29 @@
                 "meta.definition.function", // 函数定义
 				"entity.name.function.python", // Python函数名
 				"meta.method.identifier.java", // Java方法名
+                "entity.name.type.record.java", // Java记录类型名
                 "keyword.control.new.java", // Java new关键字
 				"entity.name.tag.template.html.vue", // Vue模板标签名
 				"meta.function.definition.rust", // Rust函数定义
-				"entity.name.type.result.rust", // Rust函数返回类型
 				"entity.name.type.struct.rust", // Rust结构体名
                 "entity.name.type.enum.rust", // Rust枚举名
 				"entity.name.function.macro.rust", // Rust宏函数名
+                "entity.name.type.trait.rust", // Rust trait名
                 "meta.function.definition.parameters.c", // C函数
                 "entity.name.type.class.cpp", // C++类名
                 "entity.name.function.definition.cpp", // C++函数定义
 				"entity.name.type.struct.cpp", // C++结构体名
+				"entity.name.function.definition.special.constructor.cpp", // C++构造函数
+                "entity.name.type.enum.cpp", // C++枚举名
 				"meta.function.php", // PHP函数名
                 "support.function.construct.output.php", // PHP输出函数
+                "entity.name.type.enum.cs", // C#枚举名
+                "entity.name.function.go", // Go函数名
+				"meta.definition.method.js", // JavaScript方法定义
+				"entity.name.function.lua", // Lua函数名
+                "meta.function.method.with-arguments.ruby", // Ruby函数名
+				"keyword.other.create.sql", // SQL创建关键字
+                "entity.name.type.alias.ts", // TS类型别名
             ],
             "settings": {
                 "foreground": "#D33682",
@@ -390,8 +446,9 @@
                 "meta.function-call", // 函数调用
                 "meta.method-call", // 方法调用
 				"entity.other.attribute-name.html", // HTML属性名
-				"meta.method-call.java", // Java方法调用
+				"punctuation.definition.annotation.java", // Java注解@符号
 				"storage.type.annotation.java",  // Java注解类型关键字
+				"meta.method-call.java", // Java方法调用
 				"entity.name.type.annotation.java",  // Java注解名
 				"variable.annotation.java", // Java注解变量
                 "meta.function.call.rust", // Rust函数调用
@@ -401,6 +458,13 @@
 				"entity.name.tag.css", // 内置css属性名,例如div、p 
 				"entity.name.function.cs", // C#函数名
 				"entity.other.attribute-name.localname.xml",
+                "entity.name.function.call.cpp", // C++函数调用
+                "entity.name.function.dart", // Dart函数名
+				"entity.name.function.support.go", // Go函数
+                "entity.name.function.support.builtin.go", // Go内置函数名
+                "support.function.any-method.lua", // Lua任意函数
+				"punctuation.definition.decorator.python", // Python装饰器@符号
+				"meta.function.decorator.python", // Python装饰器函数
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -423,6 +487,13 @@
 				"entity.name.namespace.rust", // Rust命名空间名
 				"entity.name.variable.parameter.cs", // C#函数参数名
                 "meta.function.parameters.php", // PHP函数参数
+                "entity.name.namespace.cpp", // C++命名空间名
+                "entity.name.scope-resolution.cpp",  // C++作用域解析符号
+				"entity.name.variable.property.cs", // C#变量对象属性
+				"entity.name.type.package.go", // Go包名
+				"entity.name.type.module.ruby", // Ruby模块名
+                "keyword.other.DML.sql", // SQL DML关键字
+				"entity.name.type.module.ts", // TS模块名
             ],
             "settings": {
                 "foreground": "#6C71C4",
@@ -431,11 +502,7 @@
 		{
             "name": "Orange",
             "scope": [
-				"punctuation.definition.decorator.python", // Python装饰器@符号
-				"meta.function.decorator.python", // Python装饰器函数
                 "storage.type.generic.java", // Java泛型类型关键字
-				"punctuation.definition.annotation.java", // Java注解@符号
-				"storage.type.annotation.java",  // Java注解类型关键字
             ],
             "settings": {
                 "foreground": "#CB4B16",
@@ -446,6 +513,7 @@
             "scope": [
 				"string.quoted.single", // 单引号字符串
                 "string.quoted.double", // 双引号字符串
+				"string.interpolated.single.dart", // Dart单引号插值字符串
             ],
             "settings": {
                 "foreground": "#2AA198",
@@ -496,6 +564,7 @@
 				"meta.preprocessor.include.c", // C预处理包含头文件
 				"string.quoted.double.include.c", // C包含头文件字符串
                 "string.quoted.double.include.cpp", // C++包含头文件字符串
+                "variable.other.rust", // Rust变量
 			],
 			"settings": {
 				"foreground": "#657B83"

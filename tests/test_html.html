@@ -1,0 +1,50 @@
+
+<!-- HTML Advanced Syntax Test for Solarized Flat Theme -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { background: #fdf6e3; color: #657b83; margin: 2em; }
+        .highlight { color: #b58900; }
+        table { border-collapse: collapse; width: 50%; }
+        th, td { border: 1px solid #93a1a1; padding: 4px 8px; }
+        input:focus { outline: 2px solid #268bd2; }
+        svg { width: 40px; height: 40px; }
+    </style>
+</head>
+<body>
+    <h1 class="highlight">Solarized Flat Theme Test</h1>
+    <p id="desc">Testing <strong>HTML</strong> syntax highlighting, <em>including</em> <code>inline code</code>.</p>
+    <form onsubmit="return false;">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <thead><tr><th>Header 1</th><th>Header 2</th></tr></thead>
+        <tbody>
+            <tr><td>Cell 1</td><td>Cell 2</td></tr>
+            <tr><td colspan="2">Merged</td></tr>
+        </tbody>
+    </table>
+    <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#b58900" stroke="#657b83" stroke-width="4" />
+    </svg>
+    <my-element data-info="custom">Custom Element</my-element>
+    <script type="module">
+        class MyElement extends HTMLElement {
+            connectedCallback() {
+                this.style.color = '#268bd2';
+            }
+        }
+        customElements.define('my-element', MyElement);
+        document.getElementById('desc').innerText = 'JS in HTML!';
+        document.querySelector('form').onsubmit = e => {
+            alert('Submitted: ' + document.getElementById('name').value);
+        };
+    </script>
+</body>
+</html>
