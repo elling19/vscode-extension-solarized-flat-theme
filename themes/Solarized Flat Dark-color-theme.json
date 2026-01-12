@@ -259,7 +259,6 @@
         {
 			"name": "Markup Lists",
 			"scope": [
-				"markup.list.unnumbered.markdown"
 			],
 			"settings": {
 				"foreground": "#859900"
@@ -332,6 +331,7 @@
 				"keyword.function.go", // Go函数关键字
                 "keyword.local.lua", // Lua局部变量关键字
 				"variable.other.constant.ruby", // Ruby常量变量
+                "punctuation.definition.string.heredoc.delimiter.shell", // Shell heredoc字符串分隔符
             ],
             "settings": {
                 "foreground": "#B58900",
@@ -394,6 +394,8 @@
                 "keyword.other.DML.II.sql", // SQL DML关键字
 				"keyword.other.DDL.create.II.sql", // SQL DDL创建关键字
                 "entity.name.type.ts", // TS类型名
+                "punctuation.definition.list.begin.markdown", // Markdown无序列表符号-
+                "support.function.builtin.shell", // Shell内置函数
             ],
             "settings": {
                 "foreground": "#859900",
@@ -465,6 +467,8 @@
                 "support.function.any-method.lua", // Lua任意函数
                 "punctuation.definition.decorator.python", // Python装饰器@符号
                 "meta.function.decorator.python", // Python装饰器函数
+                "entity.name.function.call.shell", // Shell函数调用
+				"entity.name.function.shell", // Shell函数名
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -494,6 +498,7 @@
 				"entity.name.type.module.ruby", // Ruby模块名
                 "keyword.other.DML.sql", // SQL DML关键字
 				"entity.name.type.module.ts", // TS模块名
+				"meta.image.inline.markdown", // Markdown内联图片
             ],
             "settings": {
                 "foreground": "#6C71C4",
@@ -515,6 +520,7 @@
                 "string.quoted.double", // 双引号字符串
                 "string.quoted.multi.python", // Python多行字符串
 				"string.interpolated.single.dart", // Dart单引号插值字符串
+                "meta.separator.markdown", // Markdown分隔线
             ],
             "settings": {
                 "foreground": "#2AA198",
@@ -553,6 +559,8 @@
                 "keyword.operator.access.dot.rust", // Rust访问操作符.
                 "punctuation.section.embedded.begin.php", // PHP嵌入开始标签<?php
                 "punctuation.section.embedded.end.php", // PHP嵌入结束标签
+				"markup.underline.link", // markdown链接
+				"punctuation.definition.metadata.markdown", // markdown元数据符号
 			],
 			"settings": {
 				"foreground": "#586E75"
@@ -566,6 +574,7 @@
 				"string.quoted.double.include.c", // C包含头文件字符串
                 "string.quoted.double.include.cpp", // C++包含头文件字符串
                 "variable.other.rust", // Rust变量
+				"string.unquoted.argument.shell", // Shell无引号字符串
             ],
 			"settings": {
                 "foreground": "#839496"

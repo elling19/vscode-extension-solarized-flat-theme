@@ -46,3 +46,9 @@ console.log('Hello, Markdown!');
 Footnote example[^1].
 
 [^1]: This is a footnote.
+
+```sh
+git clone https://github.com/elling19/vscode-extension-solarized-flat-theme.git
+cd vscode-extension-solarized-flat-theme
+code .
+```
