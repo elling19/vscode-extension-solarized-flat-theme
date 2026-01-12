@@ -68,6 +68,11 @@ def main():
         print(f"Caught: {e}")
     print(list(gen_numbers(3)))
     print({x: x**2 for x in range(3)})
+    print(f"""
+    Multi-line string with expression: {sum(range(5))}
+    Multi-line string with expression: {sum(range(5))}
+    """
+    )
 
     async def run_async():
         result = await async_add(2, 3)
