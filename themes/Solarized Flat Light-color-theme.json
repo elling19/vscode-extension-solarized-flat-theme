@@ -165,113 +165,18 @@
 		"diffEditor.removedTextBackground": "#dc322f33",
 	},
 	"tokenColors": [
-		/**
-		 * Markup相关
-		 */
 		{
-			"name": "Markup: Changed",
-			"scope": "markup.changed",
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Markup: Deletion",
-			"scope": "markup.deleted",
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Markup: Emphasis",
+			"name": "Italic",
 			"scope": "markup.italic",
 			"settings": {
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Markup: Error",
-			"scope": "markup.error",
-			"settings": {
-				"foreground": "#DC322F"
-			}
-		},
-		{
-			"name": "Markup: Insertion",
-			"scope": "markup.inserted",
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Markup: Link",
-			"scope": "meta.link",
-			"settings": {
-				"foreground": "#4B83CD"
-			}
-		},
-		{
-			"name": "Markup: Output",
-			"scope": [
-				"markup.output",
-				"markup.raw"
-			],
-			"settings": {
-				"foreground": "#777777"
-			}
-		},
-		{
-			"name": "Markup: Prompt",
-			"scope": "markup.prompt",
-			"settings": {
-				"foreground": "#777777"
-			}
-		},
-		{
-			"name": "Markup: Heading",
-			"scope": "markup.heading",
-			"settings": {
-				"foreground": "#D33682",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"name": "Markup: Traceback",
-			"scope": "markup.traceback",
-			"settings": {
-				"foreground": "#DC322F"
-			}
-		},
-		{
-			"name": "Markup: Underline",
+			"name": "Underline",
 			"scope": "markup.underline",
 			"settings": {
 				"fontStyle": "underline"
-			}
-		},
-		{
-			"name": "Markup Quote",
-			"scope": "markup.quote",
-			"settings": {
-				"foreground": "#6C71C4"
-			}
-		},
-		{
-			"name": "Markup Lists",
-			"scope": [
-			],
-			"settings": {
-				"foreground": "#859900"
-			}
-		},
-		{
-			"name": "Markup Bold",
-			"scope": [
-				"markup.bold",
-			],
-			"settings": {
-				"foreground": "#2AA198",
-				"fontStyle": "bold"
 			}
 		},
 		{
@@ -284,21 +189,6 @@
 				"fontStyle": "italic"
 			}
 		},
-		{
-			"name": "Markup Inline",
-			"scope": "markup.inline.raw",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#859900"
-			}
-		},
-		{
-            "name": "Markup Code Block",
-            "scope": "markup.fenced_code.block",
-            "settings": {
-                "foreground": "#93A1A1"
-            }
-        },
 		{
             "name": "Yellow",
             "scope": [
@@ -395,6 +285,7 @@
 				"keyword.other.DDL.create.II.sql", // SQL DDL创建关键字
                 "entity.name.type.ts", // TS类型名
                 "punctuation.definition.list.begin.markdown", // Markdown无序列表符号-
+				"markup.inline.raw", // Markdown行内代码
                 "support.function.builtin.shell", // Shell内置函数
 			],
             "settings": {
@@ -442,6 +333,16 @@
             }
         },
 		{
+            "name": "Magenta Bold",
+            "scope": [
+                "markup.heading", // markdown标题
+            ],
+            "settings": {
+                "foreground": "#D33682",
+                "fontStyle": "bold"
+            }
+        },
+		{
             "name": "Blue",
             "scope": [
 				"string.regexp",  // 正则表达式
@@ -469,6 +370,7 @@
 				"meta.function.decorator.python", // Python装饰器函数
                 "entity.name.function.call.shell", // Shell函数调用
 				"entity.name.function.shell", // Shell函数名
+				"meta.link", // Markdown链接
             ],
             "settings": {
                 "foreground": "#268BD2",
@@ -499,6 +401,8 @@
                 "keyword.other.DML.sql", // SQL DML关键字
 				"entity.name.type.module.ts", // TS模块名
 				"meta.image.inline.markdown", // Markdown内联图片
+                "fenced_code.block.language", // Markdown代码块语言标识
+				"markup.quote", // Markdown引用
             ],
             "settings": {
                 "foreground": "#6C71C4",
@@ -521,14 +425,28 @@
                 "string.quoted.multi.python", // Python多行字符串
 				"string.interpolated.single.dart", // Dart单引号插值字符串
                 "meta.separator.markdown", // Markdown分隔线
+                "string.template.js", // JavaScript模板字符串
+                "string.template.ts", // TypeScript模板字符串
             ],
             "settings": {
                 "foreground": "#2AA198",
             }
         },
 		{
+			"name": "Cyan Bold",
+			"scope": [
+				"markup.bold", // markdown加粗
+			],
+			"settings": {
+				"foreground": "#2AA198",
+				"fontStyle": "bold"
+			}
+		},
+		{
             "name": "Red",
             "scope": [
+                "markup.traceback",
+				"markup.error"
             ],
             "settings": {
                 "foreground": "#DC322F",
@@ -561,6 +479,9 @@
                 "punctuation.section.embedded.end.php", // PHP嵌入结束标签
 				"markup.underline.link", // markdown链接
 				"punctuation.definition.metadata.markdown", // markdown元数据符号
+	            "punctuation.definition.markdown", // markdown定义符号
+                "punctuation.definition.strikethrough.markdown", // markdown删除线符号
+				"markup.strikethrough.markdown", // markdown删除线
 			],
 			"settings": {
 				"foreground": "#93A1A1"

@@ -81,3 +81,5 @@ console.log('Gen:', gen.next().value, gen.next().value);
 console.log('Proxy greet:', proxied.greet());
 console.log('Sum:', sum(3, 4));
 console.log('Tagged:', tagged);
+console.log(`2 + 3 = ${MathUtils.add(2, 3)}`);
+console.log(`User keys: ${Object.keys(users[0])}`);

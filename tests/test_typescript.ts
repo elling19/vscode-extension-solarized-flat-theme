@@ -106,3 +106,6 @@ console.log(userName);
 // --- Import/Export (ESM) ---
 // export function exportedFunc() {}
 // import { exportedFunc } from './someModule';
+
+console.log(`2 + 3 = ${MathUtils.add(2, 3)}`);
+console.log(`User keys: ${Object.keys(users[0])}`);

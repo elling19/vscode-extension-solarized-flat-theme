@@ -19,6 +19,11 @@
 console.log('Hello, Markdown!');
 ```
 
+```python
+a = 1
+print("Hello, Markdown!")
+```
+
 ```math
 \int_0^1 x^2 dx
 ```
@@ -52,3 +57,5 @@ git clone https://github.com/elling19/vscode-extension-solarized-flat-theme.git
 cd vscode-extension-solarized-flat-theme
 code .
 ```
+
+~~this text is deleted~~
