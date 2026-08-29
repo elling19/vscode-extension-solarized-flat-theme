@@ -3,13 +3,17 @@
   "displayName": "Solarized Flat Theme",
   "icon": "icon.png",
   "description": "A flat version of the Solarized color theme for VS Code.",
-  "keywords": ["Solarized", "Flat", "Theme"],
+  "keywords": [
+    "Solarized",
+    "Flat",
+    "Theme"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/elling19/vscode-extension-solarized-flat-theme"
   },
   "publisher": "Elling",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/elling19/vscode-extension-solarized-flat-theme/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/elling19/vscode-extension-solarized-flat-theme/issues"

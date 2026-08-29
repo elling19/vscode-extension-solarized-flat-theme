@@ -41,13 +41,13 @@
 		"editorGroupHeader.tabsBackground": "#FDF6E3", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
 		"editorGroupHeader.border": "#EEE8D5", // 标签栏右侧按钮边框色
 		// 列表项
-		"list.activeSelectionBackground": "#EEE8D5", // 选中列表项背景色
-		"list.activeSelectionForeground": "#657B83",
-		"list.inactiveSelectionBackground": "#EEE8D5",
-		"list.inactiveSelectionForeground": "#657B83",
+		"list.activeSelectionBackground": "#93A1A1", // 选中列表项背景色
+		"list.activeSelectionForeground": "#002B36",
+		"list.inactiveSelectionBackground": "#93A1A1",
+		"list.inactiveSelectionForeground": "#002B36",
 		"list.hoverBackground": "#EEE8D5", // 鼠标悬停列表项背景色
 		"list.hoverForeground": "#657B83",
-		"list.focusOutline": "#EEE8D5", // 列表项聚焦边框色
+		"list.focusOutline": "#268BD2", // 列表项聚焦边框色
 		// 面包屑导航
 		"breadcrumb.foreground": "#93A1A1",
 		"breadcrumb.background": "#FDF6E3",
