@@ -2,6 +2,7 @@
 	"name": "Solarized Light Flat",
 	"type": "light",
 	"colors": {
+		"foreground": "#657B83", // 全局默认前景色，避免回退到基础主题的黑色
 		"selection.background": "#268BD233", // 选中文本背景色
 		// 标题栏
 		"titleBar.activeBackground": "#FDF6E3", // 标题栏（顶部）背景色
@@ -41,13 +42,16 @@
 		"editorGroupHeader.tabsBackground": "#FDF6E3", // 标签栏右侧按钮背景色(运行调试、编辑器分页)
 		"editorGroupHeader.border": "#EEE8D5", // 标签栏右侧按钮边框色
 		// 列表项
-		"list.activeSelectionBackground": "#657B83", // 选中列表项背景色
-		"list.activeSelectionForeground": "#FDF6E3",
-		"list.inactiveSelectionBackground": "#657B83",
-		"list.inactiveSelectionForeground": "#FDF6E3",
+		"list.activeSelectionBackground": "#EEE8D5", // 与编辑器当前行高亮背景一致
+		"list.activeSelectionForeground": "#657B83",
+		"list.inactiveSelectionBackground": "#EEE8D5",
+		"list.inactiveSelectionForeground": "#657B83",
 		"list.hoverBackground": "#EEE8D5", // 鼠标悬停列表项背景色
 		"list.hoverForeground": "#657B83",
-		"list.focusOutline": "#657B83", // 列表项聚焦边框色
+		"list.focusBackground": "#EEE8D5", // 与编辑器当前行高亮背景一致
+		"list.focusForeground": "#657B83",
+		"list.focusOutline": "#00000000", // flat风格不使用边框
+		"list.focusAndSelectionOutline": "#00000000",
 		// 面包屑导航
 		"breadcrumb.foreground": "#93A1A1",
 		"breadcrumb.background": "#FDF6E3",
